@@ -128,17 +128,16 @@ return false
 }
 
 // hamburger menu 
-document.getElementById("hamburger-menu").addEventListener("click", function() {
-    const navLinks = document.getElementById("navbar-links");
-    const authButtons = document.getElementById("auth-buttons");
-    navLinks.classList.toggle("active"); // Show/Hide navbar links
-    authButtons.classList.toggle("active"); // Show/Hide auth buttons inside the hamburger menu
-});
 const hamburger = document.querySelector('.hamburger');
+const navbarLinks = document.querySelector('.navbar-links');
+const authButtons = document.querySelector('.auth-buttons');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
+  hamburger.classList.toggle('active'); // Toggle hamburger icon
+  navbarLinks.classList.toggle('active'); // Toggle navbar links visibility
+  authButtons.classList.toggle('active'); // Toggle auth buttons visibility
 });
+
 
 
 

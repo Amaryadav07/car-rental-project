@@ -91,7 +91,7 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 .hamburger .bar {
@@ -99,18 +99,18 @@ body {
   height: 4px;
   background-color: #ecf0f1;
   border-radius: 2px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 .hamburger.active .bar:nth-child(1) {
-  transform: rotate(45deg) translateY(8px); /* First bar rotates */
+  transform: rotate(45deg) translateY(8px); 
 }
 
 .hamburger.active .bar:nth-child(2) {
-  opacity: 0; /* Middle bar disappears */
+  opacity: 0; 
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px); /* Third bar rotates */
+  transform: rotate(-45deg) translateY(-8px); 
 }
 
 @media (max-width: 768px) {
@@ -121,15 +121,21 @@ body {
   }
 
   .navbar-links {
-    display: none;  
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    text-align: center;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  opacity: 0; 
+  transform: translateY(-20px); 
+  transition: opacity 0.7s ease, transform 0.5s ease;
+  flex-direction: column; 
+  width: 100%;
+  text-align: center;
   }
 
   .navbar-links.active {
-    display: flex; 
+    opacity: 1; 
+    transform: translateY(0); 
   }
 
   .hamburger {
@@ -138,10 +144,16 @@ body {
   }
 
   .auth-buttons {
- 
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  opacity: 0; 
+  transform: translateY(-20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .auth-buttons.active {
+    opacity: 1; 
+    transform: translateY(0); 
   }
 
   .navbar-logo {
@@ -171,7 +183,6 @@ body {
     margin-right: 20px;
   }
 }
-
 /* slider code */
 
 .mySwiper {
