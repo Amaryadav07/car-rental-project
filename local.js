@@ -133,9 +133,9 @@ const navbarLinks = document.querySelector('.navbar-links');
 const authButtons = document.querySelector('.auth-buttons');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active'); // Toggle hamburger icon
-  navbarLinks.classList.toggle('active'); // Toggle navbar links visibility
-  authButtons.classList.toggle('active'); // Toggle auth buttons visibility
+  hamburger.classList.toggle('active'); 
+  navbarLinks.classList.toggle('active'); 
+  authButtons.classList.toggle('active'); 
 });
 
 
@@ -144,38 +144,43 @@ hamburger.addEventListener('click', () => {
 // home
 
 let isLoggedIn = false;
-
 const loginButton = document.getElementById('login-btn');
 const logoutButton = document.getElementById('logout-btn');
 
 
+if (localStorage.getItem('isLoggedIn') === 'true') {
+  isLoggedIn = true;
+  loginButton.style.display = 'none'; 
+  logoutButton.style.display = 'inline-block'; 
+}
+ else {
+  isLoggedIn = false;
+  loginButton.style.display = 'inline-block'; 
+  logoutButton.style.display = 'none'; 
+}
+
+
 loginButton.addEventListener('click', () => {
-    isLoggedIn = true; 
-    updateAuthButtons(); 
+  isLoggedIn = true;
+  loginButton.style.display = 'none'; 
+  logoutButton.style.display = 'inline-block'; 
+  
+  // Save login status to localStorage
+  localStorage.setItem('isLoggedIn', 'true');
 });
 
 
 logoutButton.addEventListener('click', () => {
-    isLoggedIn = false; 
-    updateAuthButtons(); // Update button visibility
-    localStorage.clear()
+  isLoggedIn = false;
+  logoutButton.style.display = 'none'; 
+  loginButton.style.display = 'inline-block'; 
+  
+  
+  localStorage.clear();
 });
 
-
-function updateAuthButtons() {
-    if (isLoggedIn) {
-        loginButton.style.display = 'none'; 
-        logoutButton.style.display = 'inline-block'; 
-    } else {
-        loginButton.style.display = 'inline-block'; 
-        logoutButton.style.display = 'none'; 
-    }
-}
-
 // slider code
-
-
-  var swiper = new Swiper(".mySwiper", {
+ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     effect: "fade",
     navigation: {
