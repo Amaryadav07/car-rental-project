@@ -1,0 +1,121 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./images/bmw.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+  
+    backdrop-filter: blur(2px); 
+    /* box-shadow: 0 4px 10px orangered;  */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    margin-left: 50px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+.input-container {
+    position: relative;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding-left: 30px; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.612);
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(92, 92, 240);
+    margin-left: 20px;
+}
+
+
+input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: none;
+    margin-left: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+
+.terms-container {
+    margin-bottom: 20px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.terms-container input {
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.terms-container a {
+    color: #1ecf24;
+    text-decoration: none;
+}
+
+.terms-container a:hover {
+    text-decoration: none;
+}

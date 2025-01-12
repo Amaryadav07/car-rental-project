@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #5e5555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./images/rolls-royce-phantom.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+
+.container {
+    background: rgba(161, 156, 156, 0.9);
+    padding: 30px 50px;
+    border-radius: 80px;
+    /* box-shadow: 2px 5px 12px rgb(255, 255, 255 ); */
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    transform: scale(1);
+    /* transition: transform 0.3s ease-in-out; */
+    background: url('./images/bmw.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    padding-bottom: 20px;
+    margin-top: 220px;
+  
+}
+
+
+label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+    text-align: start;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(39, 33, 33);
+    font-size: 18px;
+    pointer-events: none; 
+}
+
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 10px 10px 30px; 
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+input[type="submit"] {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background: orangered;
+  
+}
+
+h2{
+    color: #f9f9f9;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 25px;
+    color:white;
+}
+
+.signup-link a {
+   line-height: 2rem;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.signup-link a:hover {
+    text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-logo" data-aos="fade-right" data-aos-duration="3000">
+        <a href="#"><span id="span">C</span>ar <span id="span" >R</span>ental</a>
+    </div>
+
+   
+    <div class="hamburger" id="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    
+    <ul class="navbar-links" id="navbar-links">
+        <li data-aos="fade-down" data-aos-duration="3000" data-aos-delay="500"><a href="#">Home</a></li>
+        <li data-aos="fade-down" data-aos-duration="3000" data-aos-delay="900"><a href="#">Cars</a></li>
+        <li data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1400"><a href="#">About</a></li>
+        <li data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1900"><a href="#">Contact</a></li>
+    </ul>
+
+   
+    <div class="auth-buttons" data-aos="fade-left" data-aos-duration="3000">
+        <a href="locallogin.html" id="login-btn">Login</a>
+        <a href="index.html" id="logout-btn">Logout</a>
+    </div>
+</nav>
+
+
+  
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div data-hash="slide1" class="swiper-slide">
+          <div class="slide-content">
+            <h1 data-aos="fade-down" data-aos-duration="3000" data-aos-delay="2000">Welcome to the <span> Premium Cars </span> Rental Services</h1>
+            <p>Your premium car rental experience starts here. Choose from a wide range of luxury vehicles, from sports cars to SUVs.</p>
+          </div>
+          <img src="./images/1st image.jpg" alt="car-images">
+        </div>
+    
+        <!-- Slide 2 -->
+        <div data-hash="slide2" class="swiper-slide">
+          <div class="slide-content">
+            <h1>Explore Our <span>Fleet</span> </h1>
+            <p>From family cars to high-performance vehicles, we have the perfect car for your needs. Discover our extensive fleet today.</p>
+          </div>
+          <img src="./images/chevrolet-camaro.jpg" alt="car-images">
+        </div>
+    
+        <!-- Slide 3 -->
+        <div data-hash="slide3" class="swiper-slide">
+          <div class="slide-content">
+            <h1> <span>Affordable </span> Prices</h1>
+            <p>Get the best deals with our competitive pricing options. Premium cars at affordable prices for every occasion.</p>
+          </div>
+          <img src="./images/rolls-royce.jpg" alt="car-images">
+        </div>
+    
+        <!-- Slide 4 -->
+        <div data-hash="slide4" class="swiper-slide">
+          <div class="slide-content">
+            <h1>Seamless <span>Booking</span> </h1>
+            <p>Booking your next car rental is simple and fast. With our online platform, you can reserve your car in just a few clicks.</p>
+          </div>
+          <img src="./images/bmw.jpg" alt="car-images">
+        </div>
+    
+        <!-- Slide 5 -->
+        <div data-hash="slide5" class="swiper-slide">
+          <div class="slide-content">
+            <h1>24/7 <span>Customer Support</span> </h1>
+            <p>Our customer service team is available 24/7 to assist you with your booking and any inquiries. We're here to help!</p>
+          </div>
+          <img src="./images/ford-mustang-shelby.jpg" alt="car-images">
+        </div>
+    
+        <!-- Slide 6 -->
+        <div data-hash="slide6" class="swiper-slide">
+          <div class="slide-content">
+            <h1> <span>Flexible Rental</span> Options</h1>
+            <p>Choose from daily, weekly, or monthly rental plans to suit your needs. We offer flexibility to ensure the best experience for you.</p>
+          </div>
+          <img src="./images/bugatti-chiron.jpeg" alt="car-images">
+        </div>
+    
+       
+    
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+ <!-- Browse Cars by Brand -->
+ <section id="brands">
+  <h2  data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1400">Browse  <span>Cars</span> by Brand</h2>
+  <div class="car-brand-list">
+      <div class="brand" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="500">
+          <img src="images/bmw.jpg" alt="BMW">
+          <a href="#bmw">BMW</a>
+      </div>
+      <div class="brand" data-aos="fade-down" data-aos-duration="3000" data-aos-offset="500">
+          <img src="./images/audi.jpeg" alt="Audi">
+          <a href="#audi">Audi</a>
+      </div>
+      <div class="brand" data-aos="fade-down" data-aos-duration="3000" data-aos-offset="500">
+          <img src="./images/mercedes.jpg" alt="Mercedes-Benz">
+          <a href="#mercedes">Mercedes-Benz</a>
+      </div>
+      <div class="brand" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="500">
+          <img src="./images/toyota.jpeg" alt="Toyota">
+          <a href="#toyota">Toyota</a>
+      </div>
+      <div class="brand" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="300">
+          <img src="./images/ford.jpeg" alt="Ford">
+          <a href="#ford">Ford</a>
+      </div>
+      <div class="brand" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="300">
+          <img src="./images/honda.jpeg" alt="Honda">
+          <a href="#honda">Honda</a>
+      </div>
+      <div class="brand" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="300">
+          <img src="./images/tesla.jpeg" alt="Tesla">
+          <a href="#tesla">Tesla</a>
+      </div>
+      <div class="brand" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="300">
+        <img src="./images/lambo.jpeg" alt="Lambo">
+        <a href="#tesla">Lamborghini</a>
+    </div>
+  </div>
+</section>
+
+<!-- Browse by Car Type -->
+<section id="car-types">
+  <h2  data-aos="fade-out" data-aos-duration="3000" data-aos-delay="1900">Browse <span>Cars</span>  by Type</h2>
+  <div class="car-type-list">
+      <div class="type">
+          <img src="./images/economy car.jpeg" alt="Economy"  data-aos="zoom-in-down" data-aos-duration="3000">
+          <a href="#economy">Economy</a>
+      </div>
+      <div class="type">
+          <img src="./images/luxuary car.jpeg" alt="Luxury" data-aos="zoom-in-down" data-aos-duration="3000">
+          <a href="#luxury">Luxury</a>
+      </div>
+      <div class="type">
+          <img src="./images/suv car.jpeg" alt="SUVs" data-aos="zoom-in-down" data-aos-duration="3000">
+          <a href="#suvs">SUVs</a>
+      </div>
+      <div class="type">
+          <img src="./images/lambo.jpeg" alt="Convertibles" data-aos="zoom-in-down" data-aos-duration="3000">
+          <a href="#convertibles">Convertibles</a>
+      </div>
+      <div class="type">
+          <img src="./images/electric car.jpeg" alt="Electric Cars" data-aos="zoom-in-down" data-aos-duration="3000">
+          <a href="#electric">Electric Cars</a>
+      </div>
+      <div class="type">
+          <img src="./images/van.jpeg" alt="Vans & Minivans" data-aos="zoom-in-down" data-aos-duration="3000">
+          <a href="#vans">Vans & Minivans</a>
+      </div>
+      <div class="type">
+          <img src="./images/image1.jpg" alt="Sports Cars" data-aos="zoom-in-down" data-aos-duration="3000">
+          <a href="#sports">Sports Cars</a>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- New Arrivals -->
+<section id="new-arrivals">
+  <h2  data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1900"> <span>New</span> Arrivals</h2>
+  <div class="new-arrival-list">
+      <div class="new-arrival">
+          <img src="./images/bmw x5.jpeg" alt="New Car 1" data-aos="zoom-out-right" data-aos-duration="3000">
+          <p>New BMW X5</p> <br>
+          <a href="#book">Book Now</a>
+      </div>
+      <div class="new-arrival">
+          <img src="./images/audi a8.jpeg" alt="New Car 2" data-aos="zoom-out-left" data-aos-duration="3000">
+          <p>New Audi A8</p> <br>
+          <a href="#book">Book Now</a>
+      </div>
+  </div>
+</section>
+
+<!-- Car Details Page -->
+<section id="car-details">
+  <h2  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1900"> <span>Car</span> Details</h2>
+  <div class="car-info" >
+      <img src="./images/bmw x5 car.jpeg" alt="BMW X5" data-aos="fade-down" data-aos-duration="3000">
+      <div class="details">
+          <h3>BMW X5</h3>
+          <p>Price per day: $120</p>
+          <p>Engine: 3.0L V6</p>
+          <p>Fuel Efficiency: 25 MPG</p>
+          <p>Seats: 5</p>
+          <p>Features: GPS, Bluetooth, Leather Seats, Sunroof</p>
+          <button>Book Now</button>
+      </div>
+  </div>
+</section>
+
+<!-- Filters & Sorting -->
+<section id="filters">
+  <h2  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1900"> <span id="fill">Filters</span></h2>
+  <div class="filters">
+      <label for="brand">Filter by Brand:</label>
+      <select id="brand">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="toyota">Toyota</option>
+      </select>
+
+      <label for="price">Filter by Price Range:</label>
+      <input type="range" id="price" min="50" max="300" step="10">
+
+      <label for="transmission">Filter by Transmission:</label>
+      <select id="transmission">
+          <option value="automatic">Automatic</option>
+          <option value="manual">Manual</option>
+      </select>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section id="booking-form">
+  <h2  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1900">Booking <span>Form</span> </h2>
+  <div class="form-container">
+    <form id="booking-form" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1400">
+      <label for="pickup-location">Pick-Up Location:</label>
+      <input type="text" id="pickup-location" placeholder="Enter location">
+
+      <label for="dropoff-location">Drop-Off Location:</label>
+      <input type="text" id="dropoff-location" placeholder="Enter location">
+
+      <label for="pickup-date">Pick-Up Date:</label>
+      <input type="date" id="pickup-date">
+
+      <label for="dropoff-date">Drop-Off Date:</label>
+      <input type="date" id="dropoff-date">
+      
+      <input type="submit" value="Confirm Booking">
+    </form>
+  </div>
+</section>
+
+<!-- Customer Reviews & Ratings -->
+<section id="reviews">
+  <h2 data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1400"> <span>Customer</span> Reviews</h2>
+  <div class="reviews-list">
+      <div class="review" data-aos="zoom-in-down" data-aos-duration="3000" data-aos-delay="1500">
+          <p >"Great service! The car was clean and comfortable." - John</p>
+          <p>Rating: 5/5</p>
+      </div>
+      <div class="review" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-duration="3000" data-aos-delay="1500">
+          <p>"Easy booking process and smooth rental experience." - Sarah</p>
+          <p>Rating: 4/5</p>
+      </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="help">
+  <p>&copy; 2025 Car Rental Service | <a href="#contact">Contact Us</a></p>
+  <p><a href="#terms">Terms & Conditions</a> | <a href="#privacy">Privacy Policy</a></p>
+  
+  <div class="social-links">
+    <a href="https://facebook.com" target="_blank" class="social-icon">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="social-icon">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="social-icon">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+</footer>
+
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    <script src="./vanta.js"></script>
+    <script src="./dot.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./local.js"></script>
+    
+</body>
+</html>
