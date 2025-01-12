@@ -179,6 +179,17 @@ logoutButton.addEventListener('click', () => {
   localStorage.clear();
 });
 
+// signup code checkbox validation
+// function signup() {
+//   var termsCheckbox = document.getElementById('terms');
+//   if (!termsCheckbox.checked) {
+//       alert("You must agree to the Terms & Conditions before submitting the form.");
+//       return false; // Prevent form submission
+//   }
+//   return true; // Allow form submission if checked
+// }
+
+
 // slider code
  var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
