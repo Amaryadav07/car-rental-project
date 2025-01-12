@@ -101,6 +101,17 @@ body {
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(8px); /* First bar rotates */
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0; /* Middle bar disappears */
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px); /* Third bar rotates */
+}
 
 @media (max-width: 768px) {
   .navbar {

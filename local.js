@@ -134,6 +134,11 @@ document.getElementById("hamburger-menu").addEventListener("click", function() {
     navLinks.classList.toggle("active"); // Show/Hide navbar links
     authButtons.classList.toggle("active"); // Show/Hide auth buttons inside the hamburger menu
 });
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+});
 
 
 
