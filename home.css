@@ -91,6 +91,7 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hamburger .bar {
@@ -98,6 +99,7 @@ body {
   height: 4px;
   background-color: #ecf0f1;
   border-radius: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
