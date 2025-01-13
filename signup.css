@@ -112,54 +112,54 @@ input[type="submit"]:hover {
 
 /* Media Queries */
 
-/* For large screens (desktops) */
+
 @media (min-width: 1024px) {
     .container {
-        width: 400px; /* Slightly larger container width */
+        width: 400px; 
         padding: 30px;
     }
 
     input[type="text"], input[type="email"], input[type="password"] {
-        font-size: 16px; /* Slightly larger text input size */
+        font-size: 16px; 
     }
 
     input[type="submit"] {
-        font-size: 18px; /* Larger submit button text */
+        font-size: 18px;
     }
 
     .terms-container {
-        font-size: 16px; /* Slightly larger font for terms */
+        font-size: 16px; 
     }
 }
 
-/* For medium screens (tablets) */
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .container {
-        width: 350px; /* Slightly smaller container width */
+        width: 350px; 
         margin-left: 20px;
     }
 
     input[type="text"], input[type="email"], input[type="password"] {
-        font-size: 15px; /* Slightly smaller input text */
+        font-size: 15px;
     }
 
     input[type="submit"] {
-        font-size: 16px; /* Adjust submit button text size */
+        font-size: 16px; 
     }
 
     .terms-container {
-        font-size: 15px; /* Adjust font size for terms */
+        font-size: 15px; 
     }
 }
 
-/* For small screens (phones) */
+
 @media (max-width: 768px) and (min-width: 480px) {
     body {
-        background-size: cover; /* Ensure background image stays responsive */
+        background-size: cover; 
     }
 
     .container {
-        width: 90%; /* Allow container to take more width */
+        width: 90%; 
         margin-left: 0;
         margin-right: 0;
         margin-top: 20px;
@@ -167,50 +167,50 @@ input[type="submit"]:hover {
     }
 
     input[type="text"], input[type="email"], input[type="password"] {
-        font-size: 14px; /* Adjust input text size */
-        width: 100%; /* Make inputs take full width */
+        font-size: 14px;
+        width: 100%; 
     }
 
     input[type="submit"] {
-        font-size: 16px; /* Adjust font size for smaller devices */
+        font-size: 16px; 
     }
 
     h1 {
-        font-size: 24px; /* Smaller heading text for mobile */
+        font-size: 24px; 
     }
 
     .terms-container {
-        font-size: 14px; /* Smaller terms font size */
+        font-size: 14px;
     }
 }
 
-/* For extra small screens (phones under 480px) */
+
 @media (max-width: 480px) {
     body {
-        background-size: cover; /* Ensure background image stays responsive */
+        background-size: cover; 
     }
 
     .container {
-        width: 100%; /* Take full width on very small screens */
-        height: auto; /* Adjust height based on content */
+        width: 100%; 
+        height: auto; 
         margin-left: 0;
         padding: 15px;
     }
 
     input[type="text"], input[type="email"], input[type="password"] {
-        font-size: 13px; /* Very small font size for inputs */
-        padding-left: 25px; /* Adjust padding for better readability */
+        font-size: 13px; 
+        padding-left: 25px; 
     }
 
     input[type="submit"] {
-        font-size: 14px; /* Smaller submit button size */
+        font-size: 14px; 
     }
 
     h1 {
-        font-size: 20px; /* Make the heading smaller */
+        font-size: 20px; 
     }
 
     .terms-container {
-        font-size: 13px; /* Reduce font size for terms */
+        font-size: 13px;
     }
 }

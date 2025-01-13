@@ -16,26 +16,28 @@ body {
 }
 
 .container {
-    background: rgba(161, 156, 156, 0.9);
+    /* background: rgba(161, 156, 156, 0.9); */
     padding: 30px 50px;
     border-radius: 80px;
     width: 400px;
     height: 400px;
     text-align: center;
     transform: scale(1);
-    background: url('./images/bmw.jpg') no-repeat center center fixed; 
-    background-size: cover;
+    /* background: url('./images/bmw.jpg') no-repeat center center fixed;  */
+    /* background-size: cover; */
     padding-bottom: 20px;
     margin-top: 220px;
 }
 
 label {
-    font-size: 16px;
-    color: #ffffff;
+    font-size: 18px;
+    color: #fff702;
     margin-bottom: 5px;
     display: block;
     text-align: start;
-}
+    font-weight: bolder;
+    margin-left: 2px;
+   }
 
 .input-container {
     position: relative;
@@ -47,9 +49,10 @@ label {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(39, 33, 33);
-    font-size: 18px;
+    color: rgb(5, 2, 2);
+    font-size: 16px;
     pointer-events: none; 
+    z-index: 100;
 }
 
 input[type="text"], input[type="password"] {
@@ -83,7 +86,19 @@ input[type="submit"]:hover {
 }
 
 h2{
-    color: #f9f9f9;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+   
+    animation: bounce 6s infinite ease-in-out; 
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-50px); 
+    }
+    50% {
+        transform: translateY(-250px); 
+    }
 }
 
 .signup-link {
@@ -103,90 +118,89 @@ h2{
 }
 
 
-/* Media Queries */
 
-/* For large screens (desktops) */
+
 @media (min-width: 1024px) {
     .container {
-        width: 400px; /* Keep the default width for desktops */
+        width: 400px; 
         height: 400px;
-        margin-top: 220px; /* Position the container properly */
+        margin-top: 220px; 
     }
 
     input[type="text"], input[type="password"], input[type="submit"] {
-        font-size: 16px; /* Slightly larger text input size */
+        font-size: 16px; 
     }
 
     .signup-link a {
-        font-size: 16px; /* Increase font size for larger screens */
+        font-size: 16px;
     }
 }
 
-/* For medium screens (tablets) */
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .container {
-        width: 350px; /* Decrease the width of the container */
-        height: auto; /* Adjust the height automatically based on content */
-        margin-top: 180px; /* Adjust margin for better vertical alignment */
+        width: 350px;
+        height: auto; 
+        margin-top: 180px; 
     }
 
     input[type="text"], input[type="password"], input[type="submit"] {
-        font-size: 15px; /* Slightly smaller text for input fields */
+        font-size: 15px; 
     }
 
     .signup-link a {
-        font-size: 15px; /* Decrease font size for better readability */
+        font-size: 15px; 
     }
 }
 
-/* For small screens (phones) */
+
 @media (max-width: 768px) and (min-width: 480px) {
     body {
-        background-size: cover; /* Ensure the background image stays responsive */
+        background-size: cover; 
     }
 
     .container {
-        width: 90%; /* Allow container to take more width on small screens */
-        height: auto; /* Adjust height based on content */
-        margin-top: 150px; /* Adjust top margin for smaller screens */
-        padding: 20px; /* Less padding for small screens */
+        width: 90%; 
+        height: auto; 
+        margin-top: 150px; 
+        padding: 20px; 
     }
 
     input[type="text"], input[type="password"], input[type="submit"] {
-        font-size: 14px; /* Smaller font size for inputs */
+        font-size: 14px;
     }
 
     h2 {
-        font-size: 24px; /* Slightly smaller heading */
+        font-size: 24px; 
     }
 
     .signup-link a {
-        font-size: 14px; /* Smaller font size for the link */
+        font-size: 14px; 
     }
 }
 
-/* For extra small screens (phones under 480px) */
+
 @media (max-width: 480px) {
     body {
-        background-size: cover; /* Ensure background image stays responsive */
+        background-size: cover; 
     }
 
     .container {
-        width: 90%; /* Ensure the container takes up most of the screen width */
-        height: auto; /* Automatically adjust height */
-        margin-top: 120px; /* Adjust the top margin */
-        padding: 15px; /* Smaller padding for very small screens */
+        width: 90%; 
+        height: auto; 
+        margin-top: 120px; 
+        padding: 15px; 
     }
 
     input[type="text"], input[type="password"], input[type="submit"] {
-        font-size: 13px; /* Very small font size for inputs */
+        font-size: 13px;
     }
 
     h2 {
-        font-size: 22px; /* Make the heading even smaller */
+        font-size: 22px; 
     }
 
     .signup-link a {
-        font-size: 12px; /* Reduce the link font size for mobile users */
+        font-size: 12px; 
     }
 }
