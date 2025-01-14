@@ -181,12 +181,12 @@ logoutButton.addEventListener('click', () => {
 
 // signup code checkbox validation
 // function signup() {
-//   var termsCheckbox = document.getElementById('terms');
+//   let termsCheckbox = document.getElementById('terms');
 //   if (!termsCheckbox.checked) {
-//       alert("You must agree to the Terms & Conditions before submitting the form.");
-//       return false; // Prevent form submission
+//       alert("You must agree to the Terms & Conditions.");
+//       return false; 
 //   }
-//   return true; // Allow form submission if checked
+//   return true; 
 // }
 
 
