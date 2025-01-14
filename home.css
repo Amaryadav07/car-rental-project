@@ -407,6 +407,7 @@ span {
 
 .car-brand-list a:hover {
   background-color: orangered;
+  box-shadow: 2px 4px 10px black;
 }
 
 
@@ -523,6 +524,7 @@ span {
 
 .car-type-list a:hover {
   background-color: orangered;
+  box-shadow: 2px 4px 10px whitesmoke;
 }
 
 h2 {
@@ -641,6 +643,7 @@ h2 {
 
 .new-arrival a:hover {
   background-color: orangered;
+  box-shadow: 2px 4px 10px black;
 }
 
 
@@ -773,6 +776,7 @@ h2 {
 
 .details button:hover {
   background-color: orangered;
+  box-shadow: 2px 4px 10px whitesmoke;
 }
 
 
@@ -1019,7 +1023,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #066d0b;
+  background-color: orangered;
+  box-shadow: 2px 4px 10px black;
 }
 
 /* Customer Reviews */
@@ -1099,6 +1104,7 @@ input[type="submit"]:hover {
 
 .social-icon:hover {
   color: orangered;
+ 
 }
 
 
