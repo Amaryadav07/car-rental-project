@@ -91,16 +91,17 @@ h2{
     font-weight: bolder;
     font-size: 2rem;
    
-    animation: bounce 6s infinite ease-in-out; 
+   
+    /* animation: bounce 6s infinite ease-in-out;  */
 }
-@keyframes bounce {
+/* @keyframes bounce {
     0%, 100% {
-        transform: translateY(-50px); 
+        transform: translateY(0px); 
     }
     50% {
         transform: translateY(-250px); 
     }
-}
+} */
 
 .signup-link {
     text-align: center;
