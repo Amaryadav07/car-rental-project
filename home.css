@@ -755,11 +755,15 @@ h2 {
   width: 100%;
   text-align: start;
   color: white;
+  transition: all 0.3s ease;
 }
 
-.details h3 {
-  font-size: 35px;
+
+.details summary {
+  font-size: 30px;
   margin-bottom: 10px;
+  cursor:pointer;
+  
 }
 
 .details p {
@@ -830,7 +834,7 @@ h2 {
     height: 250px; 
   }
 
-  .details h3 {
+  .details summary {
     font-size: 25px; 
   }
 
@@ -856,7 +860,7 @@ h2 {
     height: 200px; 
   }
 
-  .details h3 {
+  .details summary {
     font-size: 20px;
   }
 
@@ -1034,7 +1038,7 @@ input[type="submit"]:hover {
 #reviews {
   padding: 40px 20px;
   background-color: #ffffff;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
  
 }

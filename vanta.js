@@ -22,14 +22,14 @@ VANTA.NET({
     scaleMobile: 1.00
   })
 
-  VANTA.CLOUDS({
-    el: "#filters",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 150.00,
-    minWidth: 200.00
-  })
+  // VANTA.CLOUDS({
+  //   el: "#filters",
+  //   mouseControls: true,
+  //   touchControls: true,
+  //   gyroControls: false,
+  //   minHeight: 150.00,
+  //   minWidth: 200.00
+  // })
  
   
 
