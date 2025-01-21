@@ -209,34 +209,7 @@ logoutButton.addEventListener('click', () => {
   });
   
 //   booking form 
-document.getElementById('booking-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-  
-    const pickupLocation = document.getElementById('pickup-location').value;
-    const dropoffLocation = document.getElementById('dropoff-location').value;
-    const pickupDate = document.getElementById('pickup-date').value;
-    const dropoffDate = document.getElementById('dropoff-date').value;
-
-    
-    const bookingData = {
-      pickupLocation,
-      dropoffLocation,
-      pickupDate,
-      dropoffDate
-    };
-
-    
-    localStorage.setItem('bookingData', JSON.stringify(bookingData));
 
 
-    alert('Booking Confirmed and Saved!');
-  });
 
-// typed js
-// var typed = new Typed('#new', {
-//     strings: ["Premium"," Luxury"],
-//     typeSpeed: 200,
-//     loop:true
-//   });
  

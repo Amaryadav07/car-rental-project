@@ -256,6 +256,18 @@
   <h2  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1900">Booking <span>Form</span> </h2>
   <div class="form-container">
     <form id="booking-form" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1400">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your Name">
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" placeholder="Enter your Age">
+
+      <label for="identity">Identity:</label>
+      <input type="text" id="identity" placeholder="Enter a Valid ID">
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" placeholder="Enter Address">
+
       <label for="pickup-location">Pick-Up Location:</label>
       <input type="text" id="pickup-location" placeholder="Enter location">
 
@@ -268,7 +280,7 @@
       <label for="dropoff-date">Drop-Off Date:</label>
       <input type="date" id="dropoff-date">
       
-      <input type="submit" value="Confirm Booking">
+      <input type="submit" value="Confirm Booking" onclick=" booking()" >
     </form>
   </div>
 </section>
