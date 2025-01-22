@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <title>Document</title>
+</head>
+<body onload="GetDataa()">
+  <h1>Welcome to the  - <span  id="leg"></span></h1>
+  <fieldset >
+
+    <legend  >User-Details  </legend>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search by Name, ID, or Mobile No..." oninput="searchData()">
+     
+  </div>
+
+<table cellspacing="10px" cellpadding="15px">
+<thead>
+    <tr >
+        <th>Name</th>
+        <th>Age</th>
+        <th>Mobile</th>
+        <th>Aadhar</th>
+        <th>Address</th>
+        <th>Rented Car</th>
+        <th>Pick-Up Date</th>
+        <th>Return Date</th>
+        <th>Price</th>
+        <th>Cancel</th>
+        <th>Update</th>
+    </tr>
+</thead>
+<tbody id="show" >
+
+</tbody>
+</table>
+
+</fieldset>
+<div id="updateform">
+   
+</div>
+
+  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="typed.js"></script>
+    <script src="./crud.js"></script>
+</body>
+</html>
+

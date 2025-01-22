@@ -267,7 +267,7 @@ span {
   opacity: 1;
 }
 
-.swiper-button-next,
+/* .swiper-button-next,
 .swiper-button-prev {
   color: white;
   font-size: 2rem;
@@ -283,7 +283,7 @@ span {
 
 .swiper-button-prev {
   left: 10px;
-}
+} */
 
 .swiper-pagination-bullet {
   background-color: orangered;
@@ -369,23 +369,28 @@ span {
 /* Browse by Car Brand */
 #brands {
   background-color: whitesmoke;
-  margin-top: 80px;
-  padding-top: 30px;
+  margin-top: 50px;
+ 
   text-align: center;
   height: auto; 
+  padding-left: 20px; /* Space from left */
+  padding-right: 20px; /* Space from right */
+ 
 }
 
 #brands h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 2px 2px 4px rgba(77, 75, 75, 0.7);
 }
 
 .car-brand-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-  gap: 40px;
-  justify-items: center;
-  margin-top: 20px;
+  grid-template-columns: repeat(2, 500px); /* Only 2 images per row */
+  gap: 60px;
+ justify-content: center;
+  margin-top: 15px;
+  padding-left: 20px; /* Adds space to the left side of the grid */
+  padding-right: 20px; /* Adds space to the right side of the grid */
 }
 
 .car-brand-list .brand {
@@ -393,9 +398,11 @@ span {
 }
 
 .car-brand-list img {
-  width: 100%;
-  height: 80%;
+  width: 100%; /* Ensures image takes the full width of its container */
+  /* Adjust height automatically to maintain aspect ratio */
+ height: 300px; /* Restrict height to a max value */
   border-radius: 10px;
+  
 }
 
 .car-brand-list a {
@@ -407,7 +414,7 @@ span {
   cursor: pointer;
   border-radius: 5px;
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 3px;
   letter-spacing: 1px;
 }
 
@@ -416,32 +423,17 @@ span {
   box-shadow: 2px 4px 10px black;
 }
 
-
-
-
-@media screen and (min-width: 1024px) {
+/* Ensure 2 columns for all screen sizes */
+@media screen and (max-width: 1024px) {
   .car-brand-list {
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 80px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for all screen sizes */
+    gap: 50px;
   }
 
   .car-brand-list .brand {
-    width: 250px; 
+    width: 200px;
   }
 }
-
-
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  .car-brand-list {
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 50px; 
-  }
-
-  .car-brand-list .brand {
-    width: 200px; 
-  }
-}
-
 
 @media screen and (max-width: 767px) {
   h2 {
@@ -449,7 +441,7 @@ span {
   }
 
   .car-brand-list {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* Still 2 images per row */
     gap: 30px; 
   }
 
@@ -463,16 +455,16 @@ span {
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .car-brand-list {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* One image per row on small screens */
     gap: 20px; 
   }
 
   .car-brand-list .brand {
     width: 100%;
   }
+
   h2 {
     font-size: 1rem; 
   }
@@ -1007,7 +999,7 @@ label {
 }
 
 
-input[type="text"], input[type="date"],input[type="number"] {
+input[type="text"], input[type="date"],input[type="number"] ,select{
   width: 100%;
   padding: 8px;
   margin-bottom: 8px;
@@ -1021,7 +1013,7 @@ input[type="text"], input[type="date"],input[type="number"] {
 
 input[type="submit"] {
   width: 100%;
-  padding: 10px;
+  padding: 14px;
   background-color: #4CAF50;
   color: white;
   border: none;
