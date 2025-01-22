@@ -872,94 +872,71 @@ h2 {
 
 
 /* Filters Section */
-#filters {
-  background-color: whitesmoke;
+
+.features-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
   text-align: center;
-  padding-top: 10px;
-  height: 30vh; 
+  font-size: 2rem;
+ 
+  color: #4CAF50;
 }
 
-#fill {
-  font-size: 30px;
+/* Bullet Point List Styling */
+.features-list {
+  list-style-type: disc; /* Default bullet point style */
+  padding-left: 30px; /* Adds padding to create space for bullets */
 }
 
-
-.filters {
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  margin-top: 20px;
-  flex-wrap: wrap; 
-}
-
-.filters label {
-  font-weight: bold;
+.features-list li {
+  font-size: 1rem;
+  line-height: 2;
   margin-bottom: 10px;
 }
 
-.filters select,
-.filters input[type="range"] {
-  padding: 10px;
-  font-size: 16px;
-  width: 100%; 
-  max-width: 200px; 
- 
+.features-list li strong {
+  font-weight: bold;
+  color: #4CAF50;
 }
 
-
-@media (max-width: 1024px) {
-  .filters {
-    gap: 15px; 
-    justify-content: center;
-  }
-
-  .filters label {
-    font-size: 18px; 
-  }
-
-  .filters select,
-  .filters input[type="range"] {
-    font-size: 14px; 
-    max-width: 150px; 
-  }
-}
-
-
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .filters {
-    gap: 10px; 
-    justify-content: center; 
+  h2 {
+      font-size: 1.8rem;
   }
 
-  .filters label {
-    font-size: 16px; 
+  .features-list li {
+      font-size: 0.95rem;
   }
 
-  .filters select,
-  .filters input[type="range"] {
-    font-size: 14px; 
-    max-width: 130px; 
+  .features-section {
+      padding: 30px 15px;
   }
 }
-
 
 @media (max-width: 480px) {
-  .filters {
-    gap: 8px; 
-    justify-content: center; 
+  h2 {
+      font-size: 1.5rem;
   }
 
-  .filters label {
-    font-size: 14px; 
+  .features-list li {
+      font-size: 0.9rem;
   }
 
-  .filters select,
-  .filters input[type="range"] {
-    font-size: 12px;
-    max-width: 100px; 
+  .features-section {
+      padding: 20px 10px;
   }
 }
-
 
 
 /* Booking Form */
