@@ -992,10 +992,8 @@ h2 span {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
-  background-image: url(./images/);
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 10px;
+ 
   border-radius: 10px;
   background-color: #fff;
  
@@ -1004,15 +1002,15 @@ h2 span {
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-weight: lighter;
 }
 
 
-input[type="text"], input[type="date"] {
+input[type="text"], input[type="date"],input[type="number"] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 8px;
+  margin-bottom: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;

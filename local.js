@@ -211,5 +211,88 @@ logoutButton.addEventListener('click', () => {
 //   booking form 
 
 
+let fetchData = async () => {
+  let url = "http://localhost:3000/car";
+  try {
+      let res = await fetch(url, { method: "GET" });
+     
+      
+      let data = await res.json();
+      console.log(data); // Check if the data is being fetched correctly
+
+      let tabledata = document.querySelector("#display");
+      tabledata.innerHTML = ""; // Clear any existing table data
+
+      // Loop through the data and insert table rows
+      data.forEach((e) => {
+          tabledata.innerHTML += `
+              <tr data-id="${e.id}">
+                  <td>${e.name}</td>
+                  <td>${e.age}</td>
+                  <td>${e.mobile}</td>
+                  <td>${e.identity}</td>
+                  <td>${e.address}</td>
+                  <td>${e.pickuplocation}</td>
+                  <td>${e.dropofflocation}</td>
+                  <td>${e.pickupdate}</td>
+                  <td>${e.dropoffdate}</td>
+                 <td onclick="deleteUser('${e.id}')" id="del">Delete</td>
+
+                 <td onclick="updateUser('${e.id}')" id="del1">Edit</td>
+
+              </tr>
+          `;
+      });
+  } catch (error) {
+      console.error("Error fetching data:", error);
+  }
+};
+
+let insertt=()=>{
+
+  let inpname=document.querySelector("#inpname").value;
+  let inpage=document.querySelector("#inpage").value;
+  let inpmobile=document.querySelector("#inpmobile").value;
+  let inpidentity=document.querySelector("#inpidentity").value;
+  let inpaddress=document.querySelector("#inpaddress").value;
+  let inppickuplocation=document.querySelector("#inppickuplocation").value;
+  let inpdropofflocation=document.querySelector("#inpdropofflocation").value;
+  let inppickupdate=document.querySelector("#inppickupdate").value;
+  let inpdropoffdate=document.querySelector("#inpdropoffdate").value;
+  
+   if (inpname=="" ||inpage=="" ||inpmobile=="" || inpidentity=="" || inpaddress=="" ||inppickuplocation=="" ||inpdropofflocation=="" ||inppickupdate=="" ||inpdropoffdate=="" ) {
+    alert("Please Enter valid Data to Procced")
+    return false;
+   }
+  let url='http://localhost:3000/car'
+  
+  
+  fetch(url,{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+  
+        name:inpname ,
+        age:inpage ,
+        mobile:inpmobile ,
+        identity:inpidentity ,
+        address:inpaddress ,
+        pickuplocation: inppickuplocation,
+        dropofflocation: inpdropofflocation,
+        pickupdate: inppickupdate,
+        dropoffdate: inpdropoffdate
+  
+    })
+   
+  })
+  
+  location.href="detail.html"
+  return false;
+  
+  
+    }
+
 
  

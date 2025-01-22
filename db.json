@@ -1,0 +1,40 @@
+{
+  "car": [
+    {
+      "id": "70cb",
+      "name": "Amar",
+      "age": "66",
+      "mobile": "8319960075",
+      "identity": "663399885647",
+      "address": "Jahangirabad Square",
+      "pickuplocation": "bhopal",
+      "dropofflocation": "indore",
+      "pickupdate": "2025-01-22",
+      "dropoffdate": "2025-01-22"
+    },
+    {
+      "id": "8873",
+      "name": "anuj",
+      "age": "23",
+      "mobile": "9885647854",
+      "identity": "2365",
+      "address": "hathuwa",
+      "pickuplocation": "jaipur",
+      "dropofflocation": "new delhi",
+      "pickupdate": "2025-01-24",
+      "dropoffdate": "2025-01-25"
+    },
+    {
+      "id": "4c75",
+      "name": "sapna",
+      "age": "29",
+      "mobile": "9669773626",
+      "identity": "12345",
+      "address": "gaya",
+      "pickuplocation": "patna",
+      "dropofflocation": "gaya",
+      "pickupdate": "2025-01-25",
+      "dropoffdate": "2025-01-25"
+    }
+  ]
+}
