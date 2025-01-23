@@ -725,7 +725,7 @@ h2 {
 
 /* Car Details Section */
 #car-details {
-  background-color: rgb(86, 79, 79);
+  background-image: radial-gradient(circle at top right, rgb(4, 20, 62) 0%, rgb(4, 20, 62) 28%,rgb(49, 29, 62) 28%, rgb(49, 29, 62) 45%,rgb(94, 38, 62) 45%, rgb(94, 38, 62) 63%,rgb(138, 47, 62) 63%, rgb(138, 47, 62) 100%);
   padding: 40px 20px;
   height: auto; 
   text-align: center;
@@ -755,7 +755,7 @@ h2 {
 
 
 .details summary {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 10px;
   cursor:pointer;
   
@@ -874,39 +874,45 @@ h2 {
 /* Filters Section */
 
 .features-section {
-  background-color: #fff;
+  background-image: url(./images/chalkboard.jpg);
+ 
   padding: 40px 20px;
   margin: 20px 0;
+  
 }
+
+
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  
 }
 
-h2 {
-  text-align: center;
-  font-size: 2rem;
- 
-  color: #4CAF50;
+h3 {
+  
+  font-size: 2.5rem;
+  color: #0697f7;
 }
 
 /* Bullet Point List Styling */
 .features-list {
   list-style-type: disc; /* Default bullet point style */
-  padding-left: 30px; /* Adds padding to create space for bullets */
+  margin-top: 20px;
+  color: white;
 }
 
 .features-list li {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2;
+ 
   margin-bottom: 10px;
 }
 
 .features-list li strong {
   font-weight: bold;
-  color: #4CAF50;
+  color: white;
 }
 
 /* Responsive Styles */

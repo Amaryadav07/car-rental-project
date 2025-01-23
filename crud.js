@@ -130,7 +130,7 @@ let GetDataa = async () => {
       
        
          <form id="js" data-aos="fade-down"  data-aos-duration="3000"  data-aos-delay="500">
-        <h4>Update <span id="updated">Form...</span> </h4>
+       
         <br>
        
         <span class="close-btn" onclick="closeForm()">&times;</span>
@@ -201,7 +201,7 @@ let GetDataa = async () => {
       
       
         let finalupdate = (id) => {
-          // Fetching values from the form
+          
           let inpname = document.querySelector("#upname").value;
           let inpage = document.querySelector("#upage").value;
           let inmobile = document.querySelector("#upmobile").value;

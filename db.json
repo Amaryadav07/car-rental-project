@@ -2,7 +2,7 @@
   "car": [
     {
       "name": "amar",
-      "age": "29",
+      "age": "30",
       "mobile": "8319960075",
       "aadhar": "663399885647",
       "address": "indore",
@@ -11,18 +11,6 @@
       "dropoffdate": "2025-01-25",
       "price": "1000",
       "id": "79d7"
-    },
-    {
-      "name": "sapna",
-      "age": "30",
-      "mobile": "9669773626",
-      "aadhar": "5632984562547895",
-      "address": "gaya",
-      "premiumCar": "astonMartin",
-      "pickupdate": "2025-01-24",
-      "dropoffdate": "2025-01-31",
-      "price": "15000",
-      "id": "6032"
     }
   ]
 }
