@@ -378,6 +378,7 @@ span {
  
 }
 
+
 #brands h2 {
   font-size: 2.5rem;
   text-shadow: 2px 2px 4px rgba(77, 75, 75, 0.7);
@@ -405,8 +406,35 @@ span {
   
 }
 
+#brands summary{
+ position: relative;
+font-size: 0.9rem;
+ margin-top: 20px;
+padding: 5px;
+background-color: #518ab0;
+width: 120px;
+border-radius: 5px;
+color: whitesmoke;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+#brands summary:hover{
+  box-shadow: 2px 2px 8px black;
+  
+}
+#brands details{
+text-align: start;
+border: 2pz solid gray;
+
+}
+#brands p{
+ font-size: 0.9rem;
+ transition: 5s ease;
+
+}
 .car-brand-list a {
-  padding: 10px 15px;
+  padding: 8px 12px;
   font-weight: bold;
   background-color: #0697f7;
   color: white;
@@ -414,7 +442,7 @@ span {
   cursor: pointer;
   border-radius: 5px;
   display: inline-block;
-  margin-top: 3px;
+  margin-top: 5px;
   letter-spacing: 1px;
 }
 
@@ -422,6 +450,69 @@ span {
   background-color: orangered;
   box-shadow: 2px 4px 10px black;
 }
+/* From Uiverse.io by abrahamcalsin */ 
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 /* Ensure 2 columns for all screen sizes */
 @media screen and (max-width: 1024px) {
@@ -880,9 +971,6 @@ h2 {
   margin: 20px 0;
   
 }
-
-
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1012,6 +1100,25 @@ input[type="submit"]:hover {
   box-shadow: 2px 4px 10px black;
 }
 
+/* From Uiverse.io by dylanharriscameron */ 
+.card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  ;
+}
+
+
+
+
 /* Customer Reviews */
 #reviews {
   padding: 40px 20px;
@@ -1042,6 +1149,7 @@ input[type="submit"]:hover {
   font-size: 16px;
   margin-bottom: 5px;
 }
+
 
 /* Footer */
 

@@ -4,7 +4,7 @@ let GetDataa = async () => {
   let data = await res.json();
   console.log(data);
   paginationn(data); // Initialize pagination
-  DataShow(data);    // Display data
+      // Display data
 };
 
 // Display data in table
@@ -271,3 +271,4 @@ let searchData = () => {
 window.onload = () => {
   GetDataa(); // Fetch data and initialize pagination
 };
+
