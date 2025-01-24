@@ -3,7 +3,10 @@ let GetDataa = async () => {
   let res = await fetch(url, { method: "GET" });
   let data = await res.json();
   console.log(data);
-
+  paginationn(data); // Pass data to pagination function
+  DataShow(data); // Display data in the table
+};
+let DataShow=(data)=>{
   let tabledata = document.querySelector("#show");
   
   // Clear existing content
@@ -26,7 +29,7 @@ let GetDataa = async () => {
       </tr>
     `;
   });
-}
+};
 
   
   
@@ -296,5 +299,20 @@ let GetDataa = async () => {
                 row.style.display = 'none'; // Hide the row
             }
         });
+      
       };
-      window.onload = fetchData;
+      window.onload = GetDataa;
+
+
+      let paginationn = (data) => {
+        $('#paging').pagination({
+            dataSource: data,
+            pageSize: 5,
+            callback: function(data, pagination) {
+                DataShow(data); // Display data for the current page
+            }
+        });
+    };
+
+      
+     
