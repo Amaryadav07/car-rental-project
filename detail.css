@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 
-body{
-    background-color: #D4F6FF;
+
+/* body{
+    background-image: url(./images/background.jpeg) ;
+    background-size: cover;
 } */
 
 fieldset{
@@ -156,14 +157,14 @@ form#js {
   input[type="text"],
   input[type="date"],
   select {
-    width: 100%; /* Ensure input fields span full width of form */
+    width: 100%;
     padding: 6px;
-    font-size: 0.9rem; /* Adjust font size to make inputs more compact */
+    font-size: 0.9rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 8px;
     background-color: #fff;
-    box-sizing: border-box; /* Include padding in the width calculation */
+    box-sizing: border-box; 
   }
   
   input[type="text"]:focus,
@@ -233,6 +234,7 @@ form#js {
     color: orangered;
     padding-top: 20px;
     font-size: 2.5rem;
+    text-shadow: 2px 0px 2px black ;
 }
 
 span{
