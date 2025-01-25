@@ -35,15 +35,15 @@ VANTA.NET({
 
  
   
-  VANTA.DOTS({
-    el: "#car-types",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 300.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00
-  })
+  // VANTA.DOTS({
+  //   el: "#car-types",
+  //   mouseControls: true,
+  //   touchControls: true,
+  //   gyroControls: false,
+  //   minHeight: 300.00,
+  //   minWidth: 200.00,
+  //   scale: 1.00,
+  //   scaleMobile: 1.00
+  // })
   
  
