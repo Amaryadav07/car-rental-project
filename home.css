@@ -36,6 +36,9 @@ body {
   text-decoration: none;
   font-size: 40px;
   font-weight: bold;
+  letter-spacing: 3px;
+  font-family: "Lobster", serif;
+  
  
 }
 
@@ -395,8 +398,10 @@ span {
 
 
 #brands h2 {
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 4px rgba(77, 75, 75, 0.7);
+  letter-spacing: 3px;
+  font-family: "Lobster", serif;
+  font-size: 2rem;
+  
 }
 
 .car-brand-list {
@@ -586,22 +591,31 @@ button:hover span {
 
 
 /* Browse by Car Type */
-/* Base styles */
-/* Base styles */
+
 .car-type-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns in each row */
-  gap: 20px; /* Space between grid items */
+
   justify-content: center;
   justify-items: center;
   margin-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+h2 {
+  letter-spacing: 3px;
+  font-family: "Lobster", serif;
+  font-size: 2rem;
+  
 }
 
 .car-type-list .type {
   display: flex;
-  flex-direction: column; /* Stack the image and button vertically */
-  align-items: center; /* Center the items horizontally */
-  justify-content: center; /* Center the items vertically */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .car-type-list img {
@@ -609,20 +623,24 @@ button:hover span {
   height: 200px;
   border-radius: 50%;
   cursor: pointer;
-  animation: rotateAnimation 8s ease-in-out 8s infinite; /* Rotate every 8 seconds with 8s delay */
+  animation: rotateAnimation 12s ease-in-out 12s infinite;
+  box-shadow: 2px 4px 15px black; 
 }
+
+
+
 @keyframes rotateAnimation {
   0% {
-    transform: rotate(0deg); /* Starting position */
+    transform: rotate(0deg); 
   }
   50% {
-    transform: rotate(360deg); /* Complete one full rotation */
+    transform: rotate(360deg); 
   }
 }
 
 .car-type-list a {
   display: inline-block;
-  background-color: #0697f7;
+  background-color: #183153;
   padding: 5px 10px;
   color: white;
   border: none;
@@ -717,9 +735,15 @@ button:hover span {
   margin-top: 10px;
   font-size: 20px;
 }
+h2 {
+  letter-spacing: 3px;
+  font-family: "Lobster", serif;
+  font-size: 2rem;
+  
+}
 
 .new-arrival a {
-  background-color: #0697f7;
+  background-color: #183153;
   padding: 8px 15px;
   color: white;
   border: none;
@@ -827,11 +851,19 @@ button:hover span {
   margin-top: 50px;
 }
 
+h2 {
+  letter-spacing: 3px;
+  font-family: "Lobster", serif;
+  font-size: 2rem;
+  
+}
+
 .car-info img {
   width: 100%;
   height: 380px;
   object-fit: cover;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .details {
@@ -854,9 +886,9 @@ button:hover span {
   line-height: 25px;
 }
 
-.details button {
+  #a {
   margin-top: 20px;
-  background-color: #0697f7;
+  background-color: #183153;
   padding: 10px 15px;
   color: white;
   border: none;
@@ -865,10 +897,10 @@ button:hover span {
   
 }
 
-.details button:hover {
+#a:hover {
   background-color: orangered;
   box-shadow: 2px 4px 10px whitesmoke;
-  pointer-events: none;
+ 
 }
 
 
@@ -961,7 +993,7 @@ button:hover span {
 
 
 
-/* Filters Section */
+/* Features Section */
 
 .features-section {
   background-image: url(./images/chalkboard.jpg);
@@ -977,11 +1009,7 @@ button:hover span {
   
 }
 
-h3 {
-  
-  font-size: 2.5rem;
-  color: #0697f7;
-}
+
 
 /* Bullet Point List Styling */
 .features-list {
