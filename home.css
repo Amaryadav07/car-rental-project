@@ -213,7 +213,7 @@ body {
   .hamburger {
     display: flex;  
     justify-self:flex-end ;
-    margin-left: 220px;
+    margin-left: 200px;
    
   }
 }
