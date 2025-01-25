@@ -196,7 +196,7 @@ body {
 
   .navbar-links {
     gap: 10px;
-    margin-left: -180px;
+    margin-left: -200px;
     text-align: center;
    
   }
@@ -213,7 +213,7 @@ body {
   .hamburger {
     display: flex;  
     justify-self:flex-end ;
-    margin-left: 200px;
+    margin-left: 180px;
    
   }
 }
