@@ -43,6 +43,7 @@ body {
 .input-container {
     position: relative;
     width: 100%;
+   
 }
 
 .input-container i {
@@ -61,6 +62,7 @@ input[type="text"], input[type="password"] {
     padding: 12px 10px 10px 30px;
     margin: 10px 0;
     border: 2px solid #ddd;
+    
     border-radius: 10px;
     background: #f9f9f9;
     font-size: 14px;

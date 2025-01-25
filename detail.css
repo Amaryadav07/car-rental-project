@@ -51,7 +51,10 @@ td{
     color: white;
 }
 #del:hover{
-    box-shadow: 2px 2px 6px whitesmoke;
+    box-shadow: 2px 2px 6px black;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    font-weight: bold;
 }
 #del1{
     cursor: pointer;
@@ -60,7 +63,10 @@ td{
    
 }
 #del1:hover{
-    box-shadow: 2px 2px 6px whitesmoke;
+  box-shadow: 2px 2px 6px black;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+  font-weight: bold;
 }
 
 .search-container {
