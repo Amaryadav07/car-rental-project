@@ -857,160 +857,223 @@ h2 {
 
 
 /* Car Details Section */
-#car-details {
-  background-image: radial-gradient(circle at top right, rgb(4, 20, 62) 0%, rgb(4, 20, 62) 28%,rgb(49, 29, 62) 28%, rgb(49, 29, 62) 45%,rgb(94, 38, 62) 45%, rgb(94, 38, 62) 63%,rgb(138, 47, 62) 63%, rgb(138, 47, 62) 100%);
-  padding: 40px 20px;
-  height: auto; 
+#testimonials {
   text-align: center;
+  margin: 50px auto;
+  padding: 50px 20px;
+  background-color: white;
 }
 
-.car-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-  gap: 40px; 
-  justify-items: center;
-  margin-top: 50px;
-}
-
-h2 {
-  letter-spacing: 3px;
-  font-family: "Lobster", serif;
+#testimonials h2 {
   font-size: 2rem;
-  
-}
-
-.car-info img {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
+  font-weight: 700;
   margin-bottom: 20px;
-  border-radius: 20px;
 }
 
-.details {
+#testimonials span {
+  color: #FFD401;
+}
+
+.testimonial-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.testimonial-slider {
+  position: relative;
   width: 100%;
-  text-align: start;
-  color: white;
-  transition: all 0.3s ease;
+  height: 400px;
 }
 
-
-.details summary {
-  font-size: 25px;
-  margin-bottom: 10px;
-  cursor:pointer;
-  
+.testimonials {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-.details p {
-  font-size: 20px;
-  line-height: 25px;
+.testimonial {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
-  #a {
-  margin-top: 20px;
+.testimonial img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  max-width: 600px;
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-top: 10px;
+}
+
+.testimonial-navigation {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.nav-btn {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
   background-color: #183153;
-  padding: 10px 15px;
-  color: white;
-  border: none;
   cursor: pointer;
-  border-radius: 5px;
-  
+  transition: background-color 0.3s ease;
 }
 
-#a:hover {
-  background-color: orangered;
-  box-shadow: 2px 4px 10px whitesmoke;
- 
+.nav-btn:hover {
+  background-color: #FFD401;
 }
 
+input[type="radio"] {
+  display: none;
+}
 
+#testimonial1:checked ~ .testimonials {
+  transform: translateX(0%);
+}
 
+#testimonial2:checked ~ .testimonials {
+  transform: translateX(-100%);
+}
 
-@media screen and (min-width: 1024px) {
-  .car-info {
-    grid-template-columns: 1fr 1fr; 
-    gap: 60px; 
+#testimonial3:checked ~ .testimonials {
+  transform: translateX(-200%);
+}
+
+#testimonial4:checked ~ .testimonials {
+  transform: translateX(-300%);
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+  #testimonials h2 {
+    font-size: 1.75rem;
   }
 
-  .car-info img {
-    width: 100%; 
-    height: 380px; 
+  .testimonial-container {
+    width: 90%;
   }
 
-  .details {
-    text-align: start; 
+  .testimonial img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .testimonial h3 {
+    font-size: 1.125rem;
+  }
+
+  .testimonial p {
+    font-size: 0.95rem;
   }
 }
 
-
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  .car-info {
-    grid-template-columns: 1fr; 
-    gap: 40px;
-  }
-
-  .car-info img {
+@media only screen and (max-width: 992px) {
+  .testimonial-container {
     width: 100%;
-    height: auto; 
   }
 
-  .details {
-    text-align: start;
+  .testimonial img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .testimonial h3 {
+    font-size: 1rem;
+  }
+
+  .testimonial p {
+    font-size: 0.875rem;
   }
 }
 
-
-@media screen and (max-width: 767px) {
-  .car-info {
-    grid-template-columns: 1fr; 
-    gap: 20px; 
+@media only screen and (max-width: 768px) {
+  #testimonials {
+    padding: 40px 10px;
   }
 
-  .car-info img {
+  #testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-container {
     width: 100%;
-    height: 250px; 
   }
 
-  .details summary {
-    font-size: 25px; 
+  .testimonial img {
+    width: 130px;
+    height: 130px;
   }
 
-  .details p {
-    font-size: 18px; 
+  .testimonial h3 {
+    font-size: 1rem;
   }
 
-  .details button {
-    font-size: 14px;
-    padding: 8px 12px; 
+  .testimonial p {
+    font-size: 0.875rem;
+  }
+
+  .testimonial-navigation {
+    padding-top: 20px;
   }
 }
 
-
-@media screen and (max-width: 480px) {
-  .car-info {
-    grid-template-columns: 1fr; 
-    gap: 10px; 
+@media only screen and (max-width: 576px) {
+  #testimonials h2 {
+    font-size: 1.25rem;
   }
 
-  .car-info img {
+  .testimonial-container {
     width: 100%;
-    height: 200px; 
+    padding: 20px;
   }
 
-  .details summary {
-    font-size: 20px;
+  .testimonial img {
+    width: 120px;
+    height: 120px;
   }
 
-  .details p {
-    font-size: 16px; 
+  .testimonial h3 {
+    font-size: 0.875rem;
   }
 
-  .details button {
-    font-size: 12px; 
-    padding: 6px 10px; 
+  .testimonial p {
+    font-size: 0.75rem;
+  }
+
+  .testimonial-navigation {
+    padding-top: 10px;
   }
 }
+
 
 
 
@@ -1047,8 +1110,10 @@ h2 {
 }
 
 .grid-item img {
-  width: 60px;
-  height: 60px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 
@@ -1165,35 +1230,112 @@ input[type="submit"]:hover {
 
 
 /* Customer Reviews */
-#reviews {
-  padding: 40px 20px;
-  background-color: #ffffff;
-  height: 80vh;
+#stats {
   text-align: center;
+  margin: 50px 0px;
+  padding: 40px 20px;
  
 }
 
-.reviews-list {
+#stats h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: -50px;
+}
+
+#stats span {
+  color:#183153; /* Color for + sign */
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-left: 10px;
+ 
+ 
+}
+
+#stats .stats-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-top: 50px;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.review {
-  width: 80%;
-  max-width: 600px;
+.stat-item {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Creates the glass effect */
+  border-radius: 15px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 23%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
-.review p {
-  font-size: 16px;
-  margin-bottom: 5px;
+.stat-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover for more interaction */
 }
+
+.stat-item .stat-info h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color:    #183153; /* Color for + sign */
+  
+ 
+}
+
+.stat-info #a{
+  color: #FFD401;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+
+.stat-item .stat-info p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  letter-spacing: 2px;
+
+   font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+  .stat-item {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .stat-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #stats h2 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item .stat-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item .stat-info p {
+    font-size: 1rem;
+  }
+
+  #stats span {
+    color: #FFD401; /* Color for + sign */
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 2px;
+   
+   
+  }
+}
+
 
 
 /* Footer */
