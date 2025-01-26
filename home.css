@@ -1351,9 +1351,9 @@ input[type="submit"]:hover {
 
   #stats span {
     color: #FFD401; /* Color for + sign */
-    font-size: 1rem;
-    font-weight: lighter;
-    margin-left: 2px;
+    font-size: 1.8rem;
+   
+   
    
    
   }
