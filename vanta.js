@@ -9,7 +9,6 @@
 //     scaleMobile: 1.00
 //   })
  
- 
 
   // VANTA.DOTS({
   //   el: "#stats",
@@ -28,7 +27,7 @@
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
-    minHeight: 150.00,
+    minHeight: 200.00,
     minWidth: 200.00
   })
  

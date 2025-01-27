@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  background-color: #242527;
+  background-color:  #161A30;
   padding: 10px 20px;
   height: auto;
   grid-template-areas: "logo nav auth";
@@ -41,17 +41,21 @@ body {
   letter-spacing: 3px;
   font-family: "Lobster", serif;
   
- 
+ &:hover{
+  letter-spacing: 8px;
+  transition: 1s ease;
+  font-family: "Lobster", serif;
+ }
 }
 
 
-#span {
-  font-size: 35px;
+.navbar-logo a  #span {
+  font-size: 40px;
+   color: #EFB036;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
-#span:hover {
-  color: white;
-}
+
 
 .navbar-links {
   list-style-type: none;
@@ -64,10 +68,30 @@ body {
   color: #ecf0f1;
   text-decoration: none;
   font-size: 20px;
+  font-weight: bold;
+  position: relative; /* Needed for the pseudo-element */
+  padding-bottom: 10px; /* Add padding for space below the text */
+}
+
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust this value to add space below the text */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFD401;
+  transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.navbar-links li a:hover::after {
+  width: 100%; /* Expand the border to full width on hover */
 }
 
 .navbar-links li a:hover {
-  color: #3498db;
+  color: #FFD401;
+ 
+  transition: color 0.3s ease;
 }
 
 #logout-btn {
@@ -258,8 +282,8 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-span {
-  color: orangered;
+ span {
+  color: #EFB036;
   font-size: 4rem;
 }
 
@@ -406,6 +430,7 @@ h2 span {
   justify-content: center;
   gap: 80px;
   padding: 20px;
+
 }
 
 .brand {
@@ -637,15 +662,17 @@ h2 {
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
+  padding-bottom: 30px;
 }
 
 .car-type-list img {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   cursor: pointer;
   animation: rotateAnimation 12s ease-in-out 12s infinite;
   box-shadow: 2px 4px 15px black; 
+
 }
 
 
@@ -661,22 +688,22 @@ h2 {
 
 .car-type-list a {
   display: inline-block;
-  background-color: #183153;
-  padding: 5px 10px;
+  /* background-color: #183153; */
+ 
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: bold;
-  margin-top: 15px;
+}
+.type button{
+  width: 150px;
+  height: 50px;
+
 }
 
-.car-type-list a:hover {
-  background-color: orangered;
-  box-shadow: 2px 4px 10px black;
-}
 
 /* Media Queries */
 
@@ -718,9 +745,28 @@ h2 {
 
   .car-type-list a {
     font-size: 12px;
-    padding: 6px 10px;
+    display: inline-block;
+  }
+
+  .type button {
+    width: 160px;
+    height: 40px;
+    display: flex; /* Make button a flex container */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Ensure text inside the button is centered */
+  }
+
+  .type button a {
+    color: white; /* Ensure the link text remains white */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Adjust font size */
+     /* Make the text bold */
   }
 }
+
+
 
 
 
@@ -728,7 +774,7 @@ h2 {
 /* New Arrivals Section */
 #new-arrivals {
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: #DBD3D3;
   height: auto; 
   margin-top: 80px;
 }
@@ -756,15 +802,17 @@ h2 {
   margin-top: 10px;
   font-size: 20px;
 }
-h2 {
+ h2 {
   letter-spacing: 3px;
   font-family: "Lobster", serif;
   font-size: 2rem;
+  color: #161A30;
   
 }
 
+
 .new-arrival a {
-  background-color: #183153;
+ 
   padding: 8px 15px;
   color: white;
   border: none;
@@ -772,10 +820,7 @@ h2 {
   border-radius: 5px;
 }
 
-.new-arrival a:hover {
-  background-color: orangered;
-  box-shadow: 2px 4px 10px black;
-}
+
 
 
 
@@ -847,7 +892,30 @@ h2 {
     font-size: 12px; 
     padding: 5px 10px; 
   }
+  .new-arrival img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .new-arrival button {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   margin-left: 8px;
+   margin-top: -5px;
+    text-align: center; 
+  }
+
+  .new-arrival button a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+   
+  }
 }
+
 
 
 #brands, #car-types {
@@ -861,7 +929,7 @@ h2 {
   text-align: center;
   margin: 50px auto;
   padding: 50px 20px;
-  background-color: white;
+  background-color: #EFB036;
 }
 
 #testimonials h2 {
@@ -871,7 +939,7 @@ h2 {
 }
 
 #testimonials span {
-  color: #FFD401;
+  color: #213555;
 }
 
 .testimonial-container {
@@ -917,15 +985,16 @@ h2 {
 }
 
 .testimonial h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 10px;
+  color: #494343;
 }
 
 .testimonial p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #666;
+  color: #494343;
   margin-top: 10px;
 }
 
@@ -949,7 +1018,7 @@ h2 {
 }
 
 .nav-btn:hover {
-  background-color: #FFD401;
+  background-color: white;
 }
 
 input[type="radio"] {
@@ -1159,19 +1228,14 @@ input[type="radio"] {
 /* Booking Form */
 #booking-form {
   padding: 10px;
+  background-color: #213555;
 
 }
 
-h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: rgb(15, 146, 228);
-  box-shadow: none;
-}
+
 
 h2 span {
-  color: orangered;
+  color: #FFD401;
 }
 
 .form-container {
@@ -1181,7 +1245,7 @@ h2 span {
   padding: 10px;
  
   border-radius: 10px;
-  background-color: #fff;
+ 
  
 }
 
@@ -1190,6 +1254,7 @@ label {
   display: block;
   margin-bottom: 2px;
   font-weight: lighter;
+  color: white;
 }
 
 
@@ -1364,7 +1429,7 @@ input[type="submit"]:hover {
 /* Footer */
 
 #help {
-  background-color: #494c4f;
+  background-color: #161A30;
   padding: 20px;
   text-align: center;
   display: grid;
