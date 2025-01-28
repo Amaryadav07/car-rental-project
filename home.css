@@ -573,7 +573,7 @@ h2 span {
  
   border-radius: 10px;
   overflow: hidden;
-  width: calc(33% - 20px);
+ width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px;
@@ -590,6 +590,7 @@ h2 span {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  overflow: hidden;
   border-bottom: 2px solid #f4f4f9;
 }
 
@@ -597,12 +598,14 @@ details {
   padding: 20px;
   font-size: 1rem;
   color: #555;
+ 
 }
 
 summary {
   font-weight: bold;
   cursor: pointer;
   color: #005bb5;
+ 
 }
 
 
@@ -611,18 +614,19 @@ details p {
   margin-top: 10px;
 }
 
-details a {
+details #book{
   display: inline-block;
-  margin-top: 20px;
-  background-color: orchid;
+  margin-top: 30px;
+  background-color: #EFB036;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
+  font-size: 20px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
-details a:hover {
+details #book:hover {
   background-color: #005bb5;
 }
 
@@ -631,7 +635,7 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   border-radius: 5px;
   background: #183153;
   font-family: "Montserrat", sans-serif;
@@ -672,7 +676,7 @@ button span {
   transition: all 0.3s ease-in-out;
 }
 
-button:hover span {
+/* button:hover span {
   color: #183153;
   animation: scaleUp 0.3s ease-in-out;
 }
@@ -687,7 +691,7 @@ button:hover span {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
@@ -718,7 +722,7 @@ button:hover span {
     font-size: 0.9rem;
   }
 
-  details a {
+  details span {
     padding: 8px 15px;
   }
 }
@@ -1361,69 +1365,6 @@ input[type="radio"] {
 }
 
 
-/* Booking Form */
-#booking-form {
-  padding: 10px;
-  background-color: #213555;
-
-}
-
-
-
-h2 span {
-  color: #FFD401;
-}
-
-.form-container {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 10px;
- 
-  border-radius: 10px;
- 
- 
-}
-
-
-label {
-  display: block;
-  margin-bottom: 2px;
-  font-weight: lighter;
-  color: white;
-}
-
-
-input[type="text"], input[type="date"],input[type="number"] ,select{
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  outline: none;
-  
-}
-
-
-input[type="submit"] {
-  width: 100%;
-  padding: 14px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  box-sizing: border-box;
-  margin-top: 12px;
-}
-
-input[type="submit"]:hover {
-  background-color: orangered;
-  box-shadow: 2px 4px 10px black;
-}
-
 
 
 
@@ -1589,7 +1530,7 @@ input[type="submit"]:hover {
 }
 
 #help a:hover {
-  color: orangered;
+  color:  #FFD401;
 }
 
 .social-links {
@@ -1607,7 +1548,7 @@ input[type="submit"]:hover {
 }
 
 .social-icon:hover {
-  color: orangered;
+  color:  #FFD401;
  
 }
 

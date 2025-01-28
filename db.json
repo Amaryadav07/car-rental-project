@@ -1,10 +1,10 @@
 {
   "car": [
     {
-      "name": "amar",
+      "name": "amarr",
       "age": "32",
       "mobile": "8319960075",
-      "aadhar": "663399885647",
+      "aadhar": "6633998856472589",
       "address": "patn",
       "premiumCar": "porsche",
       "pickupdate": "2025-01-24",
@@ -49,18 +49,6 @@
       "id": "d223"
     },
     {
-      "id": "0ef3",
-      "name": "atul",
-      "age": "22",
-      "mobile": "8877625310",
-      "aadhar": "12345",
-      "address": "mumbai",
-      "premiumCar": "porsche",
-      "pickupdate": "2025-01-27",
-      "dropoffdate": "2025-01-28",
-      "price": "2000"
-    },
-    {
       "id": "4f19",
       "name": "abhay",
       "age": "22",
@@ -83,6 +71,18 @@
       "pickupdate": "2025-01-26",
       "dropoffdate": "2025-01-23",
       "price": "500"
+    },
+    {
+      "name": "ani",
+      "age": "30",
+      "mobile": "6666",
+      "aadhar": "12345",
+      "address": "nanna",
+      "premiumCar": "astonMartin",
+      "pickupdate": "2025-01-29",
+      "dropoffdate": "2025-01-25",
+      "price": "1200",
+      "id": "ba26"
     }
   ]
 }

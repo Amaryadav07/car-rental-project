@@ -88,7 +88,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #4CAF50;
+    background-color: goldenrod ; 
 }
 
 .terms-container {
@@ -103,7 +103,7 @@ input[type="submit"]:hover {
 }
 
 .terms-container a {
-    color: #1ecf24;
+   color: goldenrod ; 
     text-decoration: none;
 }
 

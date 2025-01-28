@@ -50,6 +50,22 @@ let insertt = () => {
     alert("Please Enter valid Data to Proceed");
     return false;
   }
+  else if(inpmobile.length!=10){
+    alert( "Please Enter 10 digit Mobile Number");
+     
+      document.querySelector("#inpmobile").focus();
+      return false;
+    }
+  else if(inpidentity.length!=16){
+ 
+    alert("Please Enter 16 digit Aadhar Number")
+    document.querySelector("#inpidentity").focus();
+    return false;
+  }
+
+
+
+
 
   let url = 'http://localhost:3000/car';
 
@@ -235,7 +251,7 @@ let finalupdate = (id) => {
   return false;
 };
 
-// Pagination function
+
 let paginationn = (data) => {
   $('#paging').pagination({
     dataSource: data,
@@ -250,25 +266,37 @@ let paginationn = (data) => {
 let searchData = () => {
   let searchQuery = document.querySelector("#searchInput").value.toLowerCase();
 
-  // rows of the table
+
   let tableRows = document.querySelectorAll("#show tr");
 
-  // Loop through each row and filter based on name, id, or mobile
+ 
   tableRows.forEach(row => {
     let name = row.cells[0].textContent.toLowerCase();
     let id = row.getAttribute('data-id').toLowerCase();
     let mobile = row.cells[2].textContent.toLowerCase();
 
     if (name.includes(searchQuery) || id.includes(searchQuery) || mobile.includes(searchQuery)) {
-      row.style.display = ''; // Show the row
+      row.style.display = ''; 
     } else {
-      row.style.display = 'none'; // Hide the row
+      row.style.display = 'none'; 
     }
   });
 };
 
-// Load data and pagination on page load
+
 window.onload = () => {
-  GetDataa(); // Fetch data and initialize pagination
+  GetDataa(); 
 };
+
+let userr = () => {
+  if (localStorage.getItem("isLoggedIn") === "true") {
+    // alert("okk")
+    location.href = "booking.html";
+  } else {
+   
+    alert("Please Login");
+    // location.href = "login.html";
+  }
+};
+
 

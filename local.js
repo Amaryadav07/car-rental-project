@@ -80,52 +80,59 @@ let signup = () => {
     return false; 
 }
 
-let login=()=>{
+let login = () => {
+  let loginname = document.querySelector("#name").value;
+  let loginpassword = document.querySelector("#password").value;
 
-    let loginname = document.querySelector("#name").value;
-    let loginpassword = document.querySelector("#password").value;
+  let errornamelogin = document.querySelector("#name");
+  let errorpasswordlogin = document.querySelector("#password");
 
-    let errornamelogin = document.querySelector("#name");
-    let errorpasswordlogin = document.querySelector("#password");
+  // Clear placeholder text if any
+  errornamelogin.setAttribute("placeholder", "");
+  errorpasswordlogin.setAttribute("placeholder", "");
 
-    errornamelogin.setAttribute("placeholder", "");
-    errorpasswordlogin.setAttribute("placeholder", "");
-
-    if (loginname === "") {
-        errornamelogin.setAttribute("placeholder", "Please Enter your Name");
-        errornamelogin.style.borderColor = "red";
-        document.querySelector("#name").focus();
-        return false;
-    }
-
-    if (!(loginpassword.match(/[1234567890]/) &&
-    loginpassword.match(/[!@#$%^&*()]/) &&
-    loginpassword.match(/[a-z]/) &&
-    loginpassword.match(/[A-Z]/))) {
-    document.querySelector("#password").focus();
-    alert("Password should have at least one uppercase letter, one lowercase letter, one digit");
+  // Validate name input
+  if (loginname === "") {
+    errornamelogin.setAttribute("placeholder", "Please Enter your Name");
+    errornamelogin.style.borderColor = "red";
+    document.querySelector("#name").focus();
     return false;
+  }
 
-}
- else if (loginpassword === "") {
+  // Validate password with specific requirements
+  if (!(loginpassword.match(/[1234567890]/) &&
+        loginpassword.match(/[!@#$%^&*()]/) &&
+        loginpassword.match(/[a-z]/) &&
+        loginpassword.match(/[A-Z]/))) {
+    document.querySelector("#password").focus();
+    alert("Password should have at least one uppercase letter, one lowercase letter, one digit, and one special character.");
+    return false;
+  }
+
+  // Validate empty password field
+  else if (loginpassword === "") {
     errorpasswordlogin.setAttribute("placeholder", "Please Enter your Password");
     errorpasswordlogin.style.borderColor = "red";
     document.querySelector("#password").focus();
     return false;
-}
+  }
 
-let storedName = localStorage.getItem("name");
-let storedPassword = localStorage.getItem("password");
+  // Retrieve stored credentials
+  let storedName = localStorage.getItem("name");
+  let storedPassword = localStorage.getItem("password");
 
 
-if (loginname === storedName && loginpassword === storedPassword) {
-    alert("Login Successful");
-    location.href = "index.html"; 
-} else {
+  if (loginname === storedName && loginpassword === storedPassword) {
+   
+    localStorage.setItem("isLoggedIn", "true");
+    location.href = "index.html";  
+  } else {
     alert("Login credentials do not match!");
-}
-return false
-}
+  }
+
+  return false;
+};
+
 
 // hamburger menu 
 const hamburger = document.querySelector('.hamburger');
@@ -143,18 +150,15 @@ hamburger.addEventListener('click', () => {
 
 // home
 
-let isLoggedIn = false;
+let isLoggedIn = localStorage.getItem('isLoggedIn') === 'true'; 
+
 const loginButton = document.getElementById('login-btn');
 const logoutButton = document.getElementById('logout-btn');
 
-
-if (localStorage.getItem('isLoggedIn') === 'true') {
-  isLoggedIn = true;
+if (isLoggedIn) {
   loginButton.style.display = 'none'; 
   logoutButton.style.display = 'inline-block'; 
-}
- else {
-  isLoggedIn = false;
+} else {
   loginButton.style.display = 'inline-block'; 
   logoutButton.style.display = 'none'; 
 }
@@ -165,8 +169,9 @@ loginButton.addEventListener('click', () => {
   loginButton.style.display = 'none'; 
   logoutButton.style.display = 'inline-block'; 
   
-  // Save login status to localStorage
-  localStorage.setItem('isLoggedIn', 'true');
+
+  // localStorage.setItem('isLoggedIn', 'true');
+ 
 });
 
 
@@ -175,19 +180,14 @@ logoutButton.addEventListener('click', () => {
   logoutButton.style.display = 'none'; 
   loginButton.style.display = 'inline-block'; 
   
-  
+ 
   localStorage.clear();
+ 
 });
 
-// signup code checkbox validation
-// function signup() {
-//   let termsCheckbox = document.getElementById('terms');
-//   if (!termsCheckbox.checked) {
-//       alert("You must agree to the Terms & Conditions.");
-//       return false; 
-//   }
-//   return true; 
-// }
+
+
+
 
 
 // slider code

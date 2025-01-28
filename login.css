@@ -75,7 +75,7 @@ input[type="text"], input[type="password"] {
 } */
 
 input[type="submit"] {
-    background: #2575fc;
+    background-color: #240046; 
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -88,7 +88,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: orangered;
+    background-color: goldenrod ; 
 }
 
 /* h2{
