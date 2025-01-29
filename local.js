@@ -60,7 +60,14 @@ let signup = () => {
         signpassword.match(/[a-z]/) &&
         signpassword.match(/[A-Z]/))) {
         document.querySelector("#password").focus();
-        alert("Password should have at least one uppercase letter, one lowercase letter, one digit");
+        // alert();
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+        
+          text: "Password should have at least one uppercase letter, one lowercase letter, one digit and one special character.",
+         
+        });
         return false;
     } else if (signpassword === "") {
         errorpassword.setAttribute("placeholder", "Please Enter your Password");
@@ -105,7 +112,13 @@ let login = () => {
         loginpassword.match(/[a-z]/) &&
         loginpassword.match(/[A-Z]/))) {
     document.querySelector("#password").focus();
-    alert("Password should have at least one uppercase letter, one lowercase letter, one digit, and one special character.");
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+    
+      text: "Password should have at least one uppercase letter, one lowercase letter, one digit and one special character.",
+     
+    });
     return false;
   }
 
@@ -125,9 +138,20 @@ let login = () => {
   if (loginname === storedName && loginpassword === storedPassword) {
    
     localStorage.setItem("isLoggedIn", "true");
-    location.href = "index.html";  
+   
+    
+
+    location.href = "index.html"; 
+ 
   } else {
-    alert("Login credentials do not match!");
+    
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+    
+      text:"Login credentials do not match!",
+     
+    });
   }
 
   return false;

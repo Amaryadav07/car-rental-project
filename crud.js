@@ -3,15 +3,15 @@ let GetDataa = async () => {
   let res = await fetch(url, { method: "GET" });
   let data = await res.json();
   console.log(data);
-  paginationn(data); // Initialize pagination
-      // Display data
+  paginationn(data); 
+     
 };
 
-// Display data in table
+
 let DataShow = (data) => {
   let tabledata = document.querySelector("#show");
 
-  // Clear existing content
+ 
   tabledata.innerHTML = "";
 
   data.forEach((e) => {
@@ -33,7 +33,7 @@ let DataShow = (data) => {
   });
 };
 
-// Insert data function
+
 let insertt = () => {
   let inpname = document.querySelector("#inpname").value;
   let inpage = document.querySelector("#inpage").value;
@@ -45,20 +45,23 @@ let insertt = () => {
   let inpdropoffdate = document.querySelector("#inpdropoffdate").value;
   let inpprice = document.querySelector("#inpprice").value;
 
-  // Validate inputs
+ 
   if (inpname === "" || inpage === "" || inpmobile === "" || inpaadhar === "" || inpaddress === "" || inppremiumCar === "" || inppickupdate === "" || inpdropoffdate === "" || inpprice === "") {
-    alert("Please Enter valid Data to Proceed");
+  
+    Swal.fire("Please Enter valid Data to Proceed");
     return false;
   }
   else if(inpmobile.length!=10){
-    alert( "Please Enter 10 digit Mobile Number");
+  
+    Swal.fire("Please Enter 10 digit Mobile Number");
      
       document.querySelector("#inpmobile").focus();
       return false;
     }
-  else if(inpidentity.length!=16){
+  else if(inpaadhar.length!=16){
  
-    alert("Please Enter 16 digit Aadhar Number")
+   
+    Swal.fire("Please Enter 16 digit Aadhar Number");
     document.querySelector("#inpidentity").focus();
     return false;
   }
@@ -91,7 +94,8 @@ let insertt = () => {
   return false;
 };
 
-// Delete data function
+
+
 let deleete = (id) => {
   let url = `http://localhost:3000/car/${id}`;
 
@@ -294,8 +298,10 @@ let userr = () => {
     location.href = "booking.html";
   } else {
    
-    alert("Please Login");
-    // location.href = "login.html";
+   
+ alert("Login to Procced Further")
+
+    
   }
 };
 
