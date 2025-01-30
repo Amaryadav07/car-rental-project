@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .dashboard {
+    display: flex;
+    width: 100%;
+  }
+  
+  #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: auto;
+    background: #343a40;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  #sidebar.active {
+    margin-left: -250px;
+  }
+  h3{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  span{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fdbe02;
+  }
+  
+  #sidebar .sidebar-header {
+    background: #2c3e50;
+    padding: 10px;
+    height: 71px;
+  }
+ 
+  
+  #sidebar ul.components {
+    padding: 20px 0;
+  }
+  
+  #sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #sidebar ul li a:hover {
+    background: #495057;
+  }
+  
+  #content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h4{
+    font-weight: bolder;
+    font-size: 35px;
+   
+    color: #303439;
+  }
+  
+  /* Table */
+  .table-responsive {
+    margin-top: 20px;
+  }
+  
+  .table thead th {
+    background: #343a40;
+    color: #fff;
+  }
+   td{
+    text-transform: capitalize;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Forms */
+  .navbar {
+    background-color: goldenrod ;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #240046; 
+    border: none;
+   
+  }
+  
+  .btn-primary:hover {
+    background-color: goldenrod ; 
+  
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  border: none;
+   
+  }
+  
+  .btn-danger:hover {
+    background-color: #f45262;
+   
+    box-shadow: 2px 2px 2px black;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border: none;
+
+  }
+  
+  .btn-warning:hover {
+    background-color: #fdbe02;
+   
+    box-shadow: 2px 2px 2px black;
+  }

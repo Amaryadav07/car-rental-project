@@ -2,11 +2,11 @@
   "car": [
     {
       "name": "nikhil",
-      "age": "28",
+      "age": "32",
       "mobile": "6655225569",
       "aadhar": "663399885647",
       "address": "bhopal",
-      "premiumCar": "bugatti",
+      "premiumCar": "lamborghini",
       "pickupdate": "2025-01-25",
       "dropoffdate": "2025-01-26",
       "price": "1200",
@@ -49,40 +49,52 @@
       "price": "500"
     },
     {
-      "name": "ani",
-      "age": "30",
-      "mobile": "6666",
-      "aadhar": "12345",
-      "address": "nanna",
-      "premiumCar": "astonMartin",
-      "pickupdate": "2025-01-29",
-      "dropoffdate": "2025-01-25",
-      "price": "1200",
-      "id": "ba26"
-    },
-    {
-      "id": "03ad",
       "name": "amarnath yadav",
-      "age": "29",
+      "age": "30",
       "mobile": "9988776655",
       "aadhar": "5698",
       "address": "Jahangirabad Square",
       "premiumCar": "lamborghini",
       "pickupdate": "2025-01-30",
       "dropoffdate": "2025-01-31",
-      "price": "850"
+      "price": "850",
+      "id": "03ad"
     },
     {
-      "id": "9cf0",
-      "name": "amarnath yadav",
-      "age": "29",
-      "mobile": "9988776523",
-      "aadhar": "9988776655441299",
+      "name": "sapna",
+      "age": "28",
+      "mobile": "8319977777",
+      "aadhar": "6633998856478896",
       "address": "Jahangirabad Square",
-      "premiumCar": "tesla",
-      "pickupdate": "2025-01-30",
-      "dropoffdate": "2025-01-31",
+      "premiumCar": "lamborghini",
+      "pickupdate": "2025-01-31",
+      "dropoffdate": "2025-02-01",
+      "price": "555",
+      "id": "b75c"
+    },
+    {
+      "id": "a8ad",
+      "name": "divya",
+      "age": "22",
+      "mobile": "8319999999",
+      "aadhar": "0000000000000001",
+      "address": "indore",
+      "premiumCar": "mercedes",
+      "pickupdate": "2025-01-31",
+      "dropoffdate": "2025-02-01",
       "price": "1000"
+    },
+    {
+      "id": "96cc",
+      "name": "aakash",
+      "age": "26",
+      "mobile": "8319936521",
+      "aadhar": "1234567890980765",
+      "address": "raipur",
+      "premiumCar": "bentley",
+      "pickupdate": "2025-01-31",
+      "dropoffdate": "2025-02-04",
+      "price": "250"
     }
   ]
 }
