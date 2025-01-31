@@ -108,7 +108,7 @@ body {
   .btn-primary {
     background-color: #240046; 
     border: none;
-   
+    padding: 12px 20px;
   }
   
   .btn-primary:hover {
@@ -139,3 +139,100 @@ body {
    
     box-shadow: 2px 2px 2px black;
   }
+
+
+  /* Custom Styles for Add Car Form */
+
+/* Style for the Add Car Form Section */
+#addCarForm {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#addCarForm h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#addCarFormDetails {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form inputs */
+#addCarFormDetails .form-control {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+#addCarFormDetails .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for buttons */
+#addCarFormDetails .btn {
+  background-color: #240046;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#addCarFormDetails .btn:hover {
+  background-color: goldenrod;
+}
+
+/* Layout adjustments for the form */
+#addCarFormDetails .row {
+  margin-bottom: 15px;
+}
+
+#addCarFormDetails .form-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Design for the form */
+@media (max-width: 767px) {
+  #addCarFormDetails .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Add extra spacing at the bottom of the form */
+#addCarFormDetails .col-12 {
+  margin-top: 15px;
+}
+
+/* Styling for the textarea */
+#carFeatures {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Adjust padding and margin on form components */
+#addCarFormDetails .row g-3 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#addCarFormDetails .col-md-6,
+#addCarFormDetails .col-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}

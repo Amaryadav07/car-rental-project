@@ -299,7 +299,7 @@ let searchData = () => {
    
     let mobile = row.cells[2].textContent.toLowerCase();
 
-    if (name.includes(searchQuery) || id.includes(searchQuery) || mobile.includes(searchQuery)) {
+    if (name.includes(searchQuery) ||  mobile.includes(searchQuery)) {
       row.style.display = ''; 
     } else {
       row.style.display = 'none'; 
@@ -313,3 +313,47 @@ window.onload = () => {
   GetDataa();
  
 };
+
+
+// admin code starts from here  cars section code
+
+// const adminurl="http://localhost:3000/admin"
+
+let insertCar= async()=>{
+
+  let name=document.querySelector("#carName").value
+  let model=document.querySelector("#carModel").value
+  let price=document.querySelector("#carPrice").value
+  let engine= document.querySelector("#carEngine").value
+  let fuel=document.querySelector("#carFuelEfficiency").value
+  let seats=document.querySelector("#carSeats").value
+  let features= document.querySelector("#carFeatures").value
+  let image= document.querySelector("#carImage").value
+  
+
+
+    await fetch("http://localhost:3000/admin", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        carName: name,
+        carModel: model,
+        carPrice: price,
+        carEngine: engine,
+        carFuelEfficiency: fuel,
+        carSeats: seats,
+        carFeatures: features,
+        carimage:image
+       
+       
+      }),
+    });
+   
+    return false; 
+  }
+  
+
+
+

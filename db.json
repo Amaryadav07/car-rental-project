@@ -2,7 +2,7 @@
   "car": [
     {
       "name": "nikhil",
-      "age": "32",
+      "age": "30",
       "mobile": "6655225569",
       "aadhar": "663399885647",
       "address": "bhopal",
@@ -95,6 +95,91 @@
       "pickupdate": "2025-01-31",
       "dropoffdate": "2025-02-04",
       "price": "250"
+    }
+  ],
+  "admin": [
+    {
+      "carName": "centro",
+      "carModel": "2019",
+      "carPrice": "1000",
+      "carEngine": "600cc",
+      "carFuelEfficiency": "25mpg",
+      "carSeats": "5",
+      "carFeatures": "comfortable",
+      "id": "c83e"
+    },
+    {
+      "id": "4866",
+      "carName": "alto",
+      "carModel": "2019",
+      "carPrice": "2000",
+      "carEngine": "330cc",
+      "carFuelEfficiency": "5.0 litres",
+      "carSeats": "5",
+      "carFeatures": "nice"
+    },
+    {
+      "id": "0e87",
+      "carName": "aston",
+      "carModel": "2024",
+      "carPrice": "3000",
+      "carEngine": "1000cc",
+      "carFuelEfficiency": "5.0 litres",
+      "carSeats": "2",
+      "carFeatures": "racing car"
+    },
+    {
+      "id": "9c0b",
+      "carName": "abc",
+      "carModel": "2023",
+      "carPrice": "2222",
+      "carEngine": "1000cc",
+      "carFuelEfficiency": "3",
+      "carSeats": "1",
+      "carFeatures": "good average"
+    },
+    {
+      "id": "c994",
+      "carName": "nano",
+      "carModel": "2016",
+      "carPrice": "500",
+      "carEngine": "110cc",
+      "carFuelEfficiency": "2",
+      "carSeats": "4",
+      "carFeatures": "good average"
+    },
+    {
+      "id": "bbee",
+      "carName": "nano",
+      "carModel": "2023",
+      "carPrice": "2000",
+      "carEngine": "110cc",
+      "carFuelEfficiency": "5.0 litres",
+      "carSeats": "1",
+      "carFeatures": "good",
+      "carimage": "C:\\fakepath\\Amar image.jpg"
+    },
+    {
+      "id": "d134",
+      "carName": "aston",
+      "carModel": "2019",
+      "carPrice": "2000",
+      "carEngine": "1000cc",
+      "carFuelEfficiency": "2",
+      "carSeats": "5",
+      "carFeatures": "good",
+      "carimage": "C:\\fakepath\\form 15G.jpg"
+    },
+    {
+      "id": "abb6",
+      "carName": "aston",
+      "carModel": "2018",
+      "carPrice": "2000",
+      "carEngine": "1000cc",
+      "carFuelEfficiency": "2",
+      "carSeats": "5",
+      "carFeatures": "good average",
+      "carimage": "C:\\fakepath\\Amar image.jpg"
     }
   ]
 }
