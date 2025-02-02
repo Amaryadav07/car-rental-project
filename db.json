@@ -180,6 +180,28 @@
       "carSeats": "5",
       "carFeatures": "good average",
       "carimage": "C:\\fakepath\\Amar image.jpg"
+    },
+    {
+      "id": "55d5",
+      "carName": "nano",
+      "carModel": "2019",
+      "carPrice": "2000",
+      "carEngine": "1000cc",
+      "carFuelEfficiency": "5.0 litres",
+      "carSeats": "4",
+      "carFeatures": "good in average",
+      "carImage": "C:\\fakepath\\Amar image.jpg"
+    },
+    {
+      "id": "db0e",
+      "carName": "centro",
+      "carModel": "2023",
+      "carPrice": "2000",
+      "carEngine": "110cc",
+      "carFuelEfficiency": "2",
+      "carSeats": "5",
+      "carFeatures": "good",
+      "carImage": "C:\\fakepath\\Amar image.jpg"
     }
   ]
 }
