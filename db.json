@@ -61,18 +61,6 @@
       "id": "03ad"
     },
     {
-      "name": "sapna",
-      "age": "28",
-      "mobile": "8319977777",
-      "aadhar": "6633998856478896",
-      "address": "Jahangirabad Square",
-      "premiumCar": "lamborghini",
-      "pickupdate": "2025-01-31",
-      "dropoffdate": "2025-02-01",
-      "price": "555",
-      "id": "b75c"
-    },
-    {
       "id": "a8ad",
       "name": "divya",
       "age": "22",
@@ -99,109 +87,48 @@
   ],
   "admin": [
     {
+      "id": "1ca2",
+      "carName": "Audi",
+      "carModel": "2020",
+      "carPrice": "1200",
+      "carEngine": "500cc",
+      "carFuelEfficiency": "4 liter",
+      "carSeats": "5",
+      "carFeatures": "gps enabled",
+      "carimage": "C:\\fakepath\\audi a8.jpeg"
+    },
+    {
+      "id": "dd39",
+      "carName": "centro",
+      "carModel": "2023",
+      "carPrice": "2000",
+      "carEngine": "1000cc",
+      "carFuelEfficiency": "10 litres",
+      "carSeats": "5",
+      "carFeatures": "good",
+      "carimage": "C:\\fakepath\\affordable.jpg"
+    },
+    {
+      "id": "7f00",
       "carName": "centro",
       "carModel": "2019",
-      "carPrice": "1000",
-      "carEngine": "600cc",
-      "carFuelEfficiency": "25mpg",
-      "carSeats": "5",
-      "carFeatures": "comfortable",
-      "id": "c83e"
-    },
-    {
-      "id": "4866",
-      "carName": "alto",
-      "carModel": "2019",
       "carPrice": "2000",
-      "carEngine": "330cc",
-      "carFuelEfficiency": "5.0 litres",
-      "carSeats": "5",
-      "carFeatures": "nice"
-    },
-    {
-      "id": "0e87",
-      "carName": "aston",
-      "carModel": "2024",
-      "carPrice": "3000",
-      "carEngine": "1000cc",
-      "carFuelEfficiency": "5.0 litres",
+      "carEngine": "110cc",
+      "carFuelEfficiency": "2",
       "carSeats": "2",
-      "carFeatures": "racing car"
-    },
-    {
-      "id": "9c0b",
-      "carName": "abc",
-      "carModel": "2023",
-      "carPrice": "2222",
-      "carEngine": "1000cc",
-      "carFuelEfficiency": "3",
-      "carSeats": "1",
-      "carFeatures": "good average"
-    },
-    {
-      "id": "c994",
-      "carName": "nano",
-      "carModel": "2016",
-      "carPrice": "500",
-      "carEngine": "110cc",
-      "carFuelEfficiency": "2",
-      "carSeats": "4",
-      "carFeatures": "good average"
-    },
-    {
-      "id": "bbee",
-      "carName": "nano",
-      "carModel": "2023",
-      "carPrice": "2000",
-      "carEngine": "110cc",
-      "carFuelEfficiency": "5.0 litres",
-      "carSeats": "1",
       "carFeatures": "good",
-      "carimage": "C:\\fakepath\\Amar image.jpg"
+      "carimage": "C:\\fakepath\\audi a8.jpeg"
     },
     {
-      "id": "d134",
-      "carName": "aston",
-      "carModel": "2019",
-      "carPrice": "2000",
-      "carEngine": "1000cc",
-      "carFuelEfficiency": "2",
-      "carSeats": "5",
-      "carFeatures": "good",
-      "carimage": "C:\\fakepath\\form 15G.jpg"
-    },
-    {
-      "id": "abb6",
-      "carName": "aston",
+      "id": "2f3b",
+      "carName": "toyota",
       "carModel": "2018",
       "carPrice": "2000",
       "carEngine": "1000cc",
-      "carFuelEfficiency": "2",
+      "carFuelEfficiency": "10 litres",
       "carSeats": "5",
-      "carFeatures": "good average",
-      "carimage": "C:\\fakepath\\Amar image.jpg"
-    },
-    {
-      "id": "55d5",
-      "carName": "nano",
-      "carModel": "2019",
-      "carPrice": "2000",
-      "carEngine": "1000cc",
-      "carFuelEfficiency": "5.0 litres",
-      "carSeats": "4",
-      "carFeatures": "good in average",
-      "carImage": "C:\\fakepath\\Amar image.jpg"
-    },
-    {
-      "id": "db0e",
-      "carName": "centro",
-      "carModel": "2023",
-      "carPrice": "2000",
-      "carEngine": "110cc",
-      "carFuelEfficiency": "2",
-      "carSeats": "5",
-      "carFeatures": "good",
-      "carImage": "C:\\fakepath\\Amar image.jpg"
+      "carFeatures": "gps enabled",
+      "carimage": "C:\\fakepath\\toyota.jpeg"
     }
   ]
 }

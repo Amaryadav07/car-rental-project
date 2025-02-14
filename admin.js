@@ -1,7 +1,7 @@
 // Sidebar 
-document.getElementById('sidebarCollapse').addEventListener('click', () => {
-    document.getElementById('sidebar').classList.toggle('active');
-});
+// document.getElementById('sidebarCollapse').addEventListener('click', () => {
+//     document.getElementById('sidebar').classList.toggle('active');
+// });
 
 //  API for all methods
 const API_URL = "http://localhost:3000/car";
@@ -13,7 +13,7 @@ let GetDataa = async () => {
     let res = await fetch(API_URL, { method: "GET" });
     let data = await res.json();
     console.log(data);
- 
+    
     paginationn(data);
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -355,5 +355,63 @@ let insertCar= async()=>{
   }
   
 
+  let userr = () => {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      // alert("okk")
+      location.href = "booking.html";
+    } else {
+     
+     
+   alert("Login to Procced Further")
+  
+      
+    }
+  }; 
+
+// ----------------------------------- from here we can Fetch and Display Car Data---------------------------------------------------
+let GetCarDataa = async () => {
+ 
+    let res = await fetch("http://localhost:3000/admin", { method: "GET" });
+    let data = await res.json();
+    console.log(data);
+    displayCarBrands(data);
+   
+};
+
+//------------------------------- from here we are  Display Car Data in the "Browse by Car Brand" Section------------------
+let displayCarBrands = (data) => {
+  let brandsSection = document.querySelector("#brands .car-brand-list");
+  brandsSection.innerHTML = "";
+
+  data.forEach((car) => {
+   
+    brandsSection.innerHTML += `
+      <div class="brand" >
+        <img src="${car.carimage}" alt="${car.carimage}" >
+        
+        <details>
+          <summary>Know More</summary>
+          <p ><strong>Price per day:</strong> $${car.carPrice}</p>
+          <p ><strong>Engine:</strong> ${car.carEngine}</p>
+          <p ><strong>Fuel Efficiency:</strong> ${car.carFuelEfficiency} MPG</p>
+          <p ><strong>Seats:</strong> ${car.carSeats}</p>
+          <p><strong>Features:</strong> ${car.carFeatures}</p>
+          <span id="book"  onclick="userr()">Book Now</span>
+        </details>
+        <button>
+          <span>${car.carName}</span>
+        </button>
+      </div>
+    `;
+    
+  });
+};
+
+window.onload = () => {
+  GetDataa();
+  GetCarDataa();
+
+ 
+};
 
 
