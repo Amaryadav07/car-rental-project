@@ -381,13 +381,13 @@ let GetCarDataa = async () => {
 //------------------------------- from here we are  Display Car Data in the "Browse by Car Brand" Section------------------
 let displayCarBrands = (data) => {
   let brandsSection = document.querySelector("#brands .car-brand-list");
-  brandsSection.innerHTML = "";
-
   data.forEach((car) => {
-   
+    let carimagearry=  car?.carimage.split("\\");
+    let imageUrl = `./images/${carimagearry[carimagearry.length-1]}` ; 
+    // brandsSection.innerHTML = "";
     brandsSection.innerHTML += `
       <div class="brand" >
-        <img src="${car.carimage}" alt="${car.carimage}" >
+        <img src="${imageUrl}" alt="${imageUrl}" >
         
         <details>
           <summary>Know More</summary>
